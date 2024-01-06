@@ -14,7 +14,7 @@ const Nav = () => {
 
       {/* MENU */}
       <div className="hidden md:flex">
-        <ul className="flex gap-8">
+        <ul className="flex gap-12 text-lg">
           <li>Home</li>
           <li>About</li>
           <li>Skills</li>
@@ -28,7 +28,7 @@ const Nav = () => {
         onClick={() => setHamburgerToggled(!hamburgerToggled)}
         className="z-10 cursor-pointer md:hidden"
       >
-        {hamburgerToggled ? <FaXmark /> : <FaBars />}
+        {hamburgerToggled ? <FaXmark size={20} /> : <FaBars size={20} />}
       </div>
 
       {/* MOBILE MENU */}
@@ -37,7 +37,7 @@ const Nav = () => {
           hamburgerToggled ? "right-0" : "-right-full"
         } bg-primary absolute top-0 h-screen w-2/3 duration-300`}
       >
-        <ul className="flex h-1/2 flex-col items-center justify-center gap-4">
+        <ul className="flex h-3/4 flex-col items-center justify-center gap-8 text-lg">
           <li>Home</li>
           <li>About</li>
           <li>Skills</li>
