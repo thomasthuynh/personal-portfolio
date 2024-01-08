@@ -27,8 +27,8 @@ const Skills = () => {
           <Language icon={JavaScript} name="JavaScript" />
           <Language icon={TypeScript} name="TypeScript" />
           <Language icon={React} name="React" />
-          <Language icon={Firebase} name="Firebase" className="self-center" />
-          <Language icon={Tailwind} name="Tailwind" className="self-center" />
+          <Language icon={Firebase} name="Firebase" />
+          <Language icon={Tailwind} name="Tailwind" />
           <Language icon={SASS} name="SASS" />
         </div>
       </div>

@@ -17,7 +17,8 @@ const Home = () => {
         <p className="text-gray py-6 lg:text-lg">
           I'm a front-end developer specializing in building responsive and
           interactive web applications. Currently, I'm focused on building a
-          variety of front-end based projects while learning back-end technologies.
+          variety of front-end based projects while learning back-end
+          technologies.
         </p>
         <ul className="flex pb-4 text-white xl:hidden">
           <li>
