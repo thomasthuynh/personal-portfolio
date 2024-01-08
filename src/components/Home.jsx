@@ -19,6 +19,44 @@ const Home = () => {
           interactive web applications. Currently, I'm focused on building a
           variety of front-end projects while learning back-end technologies.
         </p>
+        <ul className="flex pb-4 text-white xl:hidden">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/thomasthuynh/"
+              target="_blank"
+              className="hover:text-neon flex p-2 duration-150 hover:scale-110"
+            >
+              <FaLinkedinIn size={20} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/thomasthuynh"
+              target="_blank"
+              className="hover:text-neon flex p-2 duration-150 hover:scale-110"
+            >
+              <FaGithub size={20} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/thomasthuynh/"
+              target="_blank"
+              className="hover:text-neon flex p-2 duration-150 hover:scale-110"
+            >
+              <HiOutlineMail size={20} />
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              target="_blank"
+              className="hover:text-neon flex p-2 duration-150 hover:scale-110"
+            >
+              <BsFillPersonLinesFill size={20} />
+            </a>
+          </li>
+        </ul>
         <button className="hover:bg-neon hover:border-neon group flex items-center self-start border-2 border-white px-4 py-2 text-white duration-300">
           View Work
           <span className="ml-2 duration-300 group-hover:rotate-90">
@@ -27,16 +65,16 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="xs:bottom-4 xs:left-0 xs:translate-x-0 absolute bottom-0 left-1/2 -translate-x-1/2 xl:bottom-1/2 xl:translate-y-1/2">
-        <ul className="xs:flex-col flex text-white">
+      <div className="absolute bottom-1/2 left-0 hidden translate-y-1/2 xl:flex">
+        <ul className="flex flex-col text-white">
           <li>
             <a
               href="https://www.linkedin.com/in/thomasthuynh/"
               target="_blank"
-              className="xs:translate-x-[-75px] xs:hover:translate-x-0 flex justify-between bg-blue-600 p-4 duration-300"
+              className="flex translate-x-[-75px] justify-between bg-blue-600 p-4 duration-300 hover:translate-x-0"
             >
-              <p className="xs:flex hidden">LinkedIn</p>
-              <span className="xs:ml-4">
+              <p>LinkedIn</p>
+              <span className="ml-4">
                 <FaLinkedinIn size={25} />
               </span>
             </a>
@@ -45,10 +83,10 @@ const Home = () => {
             <a
               href="https://github.com/thomasthuynh"
               target="_blank"
-              className="xs:translate-x-[-75px] xs:hover:translate-x-0 flex justify-between bg-zinc-900 p-4 duration-300"
+              className="flex translate-x-[-75px] justify-between bg-zinc-900 p-4 duration-300 hover:translate-x-0"
             >
-              <p className="xs:flex hidden">Github</p>
-              <span className="xs:ml-4">
+              <p>Github</p>
+              <span className="ml-4">
                 <FaGithub size={25} />
               </span>
             </a>
@@ -56,10 +94,10 @@ const Home = () => {
           <li>
             <a
               href="mailto:thomas_tth@live.com"
-              className="xs:translate-x-[-75px] xs:hover:translate-x-0 flex justify-between bg-emerald-600 p-4 duration-300"
+              className="flex translate-x-[-75px] justify-between bg-emerald-600 p-4 duration-300 hover:translate-x-0"
             >
-              <p className="xs:flex hidden">Email</p>
-              <span className="xs:ml-4">
+              <p>Email</p>
+              <span className="ml-4">
                 <HiOutlineMail size={25} />
               </span>
             </a>
@@ -67,10 +105,10 @@ const Home = () => {
           <li>
             <a
               href="mailto:thomas_tth@live.com"
-              className="xs:translate-x-[-75px] xs:hover:translate-x-0 flex justify-between bg-slate-600 p-4 duration-300"
+              className="flex translate-x-[-75px] justify-between bg-slate-600 p-4 duration-300 hover:translate-x-0"
             >
-              <p className="xs:flex hidden">Resume</p>
-              <span className="xs:ml-4">
+              <p>Resume</p>
+              <span className="ml-4">
                 <BsFillPersonLinesFill size={25} />
               </span>
             </a>
