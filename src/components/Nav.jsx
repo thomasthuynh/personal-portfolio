@@ -6,7 +6,7 @@ const Nav = () => {
   const [hamburgerToggled, setHamburgerToggled] = useState(false);
 
   return (
-    <nav className="bg-primary fixed flex h-[80px] w-full items-center justify-between px-8 text-white">
+    <nav className="bg-primary fixed z-10 flex h-[80px] w-full items-center justify-between px-4 text-white">
       {/* LOGO */}
       <div>
         <p>Thomas Huynh</p>
@@ -35,15 +35,17 @@ const Nav = () => {
       <div
         className={`${
           hamburgerToggled ? "right-0" : "-right-full"
-        } bg-primary absolute top-0 h-screen w-2/3 duration-300`}
+        } bg-primary absolute top-0 h-screen w-full duration-300`}
       >
-        <ul className="flex h-3/4 flex-col items-center justify-center gap-8 text-lg">
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
+        <div className="flex h-full items-center justify-center">
+          <ul className="flex h-1/2 flex-col items-center justify-center gap-8 text-lg">
+            <li>Home</li>
+            <li>About</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Contact</li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
