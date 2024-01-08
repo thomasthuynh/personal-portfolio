@@ -6,7 +6,7 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 const Home = () => {
   return (
     <header className="bg-primary relative h-screen w-full">
-      <div className="mx-auto flex h-full w-[90%] max-w-[900px] flex-col justify-center">
+      <div className="mx-auto flex h-full w-[90%] max-w-[1000px] flex-col justify-center">
         <p className="text-neon font-semibold">Hi, my name is</p>
         <h1 className="py-2 text-4xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl">
           Thomas Huynh
