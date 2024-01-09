@@ -5,7 +5,7 @@ const About = () => {
     <section className="bg-primary h-screen w-full">
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col justify-center text-white">
         <h2 className="pb-12 text-center text-4xl font-bold">
-          About <span className="text-neon">Me</span>
+          About <span className="text-secondary">Me</span>
         </h2>
 
         <div className="grid gap-6 md:gap-8 md:grid-cols-2">
