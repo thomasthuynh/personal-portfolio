@@ -13,8 +13,8 @@ const Skills = () => {
   return (
     <section className="bg-primary h-screen w-full">
       <div className="mx-auto flex h-full w-[90%] max-w-[768px] flex-col items-center justify-center text-white">
-        <h2 className="text-4xl font-bold">
-          My Tech <span className="text-neon">Stack</span>
+        <h2 className="text-center text-4xl font-bold">
+          My Technology <span className="text-neon">Stack</span>
         </h2>
 
         <p className="text-gray pb-12 pt-4 text-center lg:text-lg">
