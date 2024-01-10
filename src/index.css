@@ -6,6 +6,6 @@ html {
   @apply bg-primary;
 }
 
-li {
+a {
   @apply cursor-pointer;
 }

@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -58,12 +60,18 @@ const Home = () => {
             </a>
           </li>
         </ul>
-        <button className="hover:bg-secondary hover:border-secondary group flex items-center self-start border-2 border-white px-4 py-2 text-white duration-300">
+        <Link
+          to="projects"
+          smooth={true}
+          duration={500}
+          offset={-100}
+          className="hover:bg-secondary hover:border-secondary group flex items-center self-start border-2 border-white px-4 py-2 text-white duration-300"
+        >
           View Work
           <span className="ml-2 duration-300 group-hover:rotate-90">
             <HiOutlineArrowNarrowRight />
           </span>
-        </button>
+        </Link>
       </div>
 
       <div className="fixed bottom-1/2 left-0 hidden translate-y-1/2 xl:flex">

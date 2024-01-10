@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 
+import Logo from "../assets/Logo.png"
 import { FaBars } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 
@@ -9,15 +10,15 @@ const Nav = () => {
 
   return (
     <nav className="bg-primary fixed left-0 top-0 z-10 mx-auto w-full text-white">
-      <div className="mx-auto flex w-[90%] max-w-[2560px] items-center justify-between py-6">
+      <div className="mx-auto flex w-[90%] max-w-[2560px] items-center justify-between py-4">
         {/* LOGO */}
-        <div>
-          <p>Thomas Huynh</p>
+        <div className="w-20">
+          <img src={Logo} alt="TH" />
         </div>
 
         {/* MENU */}
         <div className="hidden md:flex">
-          <ul className="flex gap-12">
+          <ul className="flex gap-12 text-lg">
             <li className="hover:opacity-80">
               <Link to="home" smooth={true} duration={500}>
                 Home
@@ -34,7 +35,7 @@ const Nav = () => {
               </Link>
             </li>
             <li className="hover:opacity-80">
-              <Link to="projects" smooth={true} duration={500} offset={-75}>
+              <Link to="projects" smooth={true} duration={500} offset={-100}>
                 Projects
               </Link>
             </li>
@@ -98,7 +99,7 @@ const Nav = () => {
                 to="projects"
                 smooth={true}
                 duration={500}
-                offset={-75}
+                offset={-100}
                 onClick={() => setHamburgerToggled(!hamburgerToggled)}
               >
                 Projects
