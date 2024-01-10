@@ -1,33 +1,74 @@
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill, BsMouse } from "react-icons/bs";
-// import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const Home = () => {
   return (
     <header name="home" className="bg-primary relative h-screen w-full">
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-center">
-        <div>
-          <p className="font-semibold text-white">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ delay: 0.25, duration: 1 }}
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0, y: -100 },
+            visible: { opacity: 100, y: 0 },
+          }}
+        >
+          <p className="font-semibold text-white lg:text-lg">
             Hi, nice to meet you{" "}
-            <span className="animate-wave inline-block text-xl">👋</span>
+            <span className="animate-wave inline-block text-xl lg:text-2xl">
+              👋
+            </span>
           </p>
           <h1 className="py-2 text-4xl font-bold text-white sm:text-5xl lg:text-6xl xl:text-7xl">
             I'm <span className="text-secondary">Thomas</span>
           </h1>
-        </div>
-        <h2 className="text-gray text-4xl font-bold sm:text-5xl lg:text-6xl xl:text-7xl">
+        </motion.div>
+        <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          transition={{ delay: 0.5, duration: 0.75 }}
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0, y: -75 },
+            visible: { opacity: 100, y: 0 },
+          }}
+          className="text-gray text-4xl font-bold sm:text-5xl lg:text-6xl xl:text-7xl"
+        >
           A Front End Developer
-        </h2>
-        <p className="text-gray pb-4 pt-6 lg:text-lg">
+        </motion.h2>
+        <motion.p
+          initial="hidden"
+          whileInView="visible"
+          transition={{ delay: 0.75, duration: 0.75 }}
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 100, y: 0 },
+          }}
+          className="text-gray pb-4 pt-6 lg:text-lg"
+        >
           I'm a front-end developer specializing in building responsive and
           interactive web applications. Currently, I'm focused on building a
           variety of front-end based projects while learning back-end
           technologies.
-        </p>
-        <ul className="flex pb-4 text-white xl:hidden">
+        </motion.p>
+        <motion.ul
+          initial="hidden"
+          whileInView="visible"
+          transition={{ delay: 1, duration: 0.75 }}
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 100, y: 0 },
+          }}
+          className="flex pb-4 text-white xl:hidden"
+        >
           <li>
             <a
               href="https://www.linkedin.com/in/thomasthuynh/"
@@ -64,7 +105,7 @@ const Home = () => {
               <BsFillPersonLinesFill size={20} />
             </a>
           </li>
-        </ul>
+        </motion.ul>
         <Link
           to="about"
           smooth={true}

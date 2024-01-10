@@ -23,26 +23,28 @@ const Contact = () => {
             onSubmit={() => setIsSubmitting(true)}
             className="flex flex-col"
           >
-            <input
-              type="text"
-              name="name"
-              className="bg-white p-2 text-black outline-none"
-              placeholder="Name"
-              required
-            />
+            <div className="flex flex-col md:flex-row md:items-center md:gap-4">
+              <input
+                type="text"
+                name="name"
+                className="w-full rounded bg-white p-2 text-black outline-none"
+                placeholder="Name"
+                required
+              />
 
-            <input
-              type="email"
-              name="email"
-              className="my-4 bg-white p-2 text-black outline-none"
-              placeholder="Email"
-              required
-            />
+              <input
+                type="email"
+                name="email"
+                className="my-4 w-full rounded bg-white p-2 text-black outline-none"
+                placeholder="Email"
+                required
+              />
+            </div>
 
             <textarea
               name="message"
               rows="10"
-              className="bg-white p-2 text-black outline-none"
+              className="rounded bg-white p-2 text-black outline-none"
               placeholder="Message"
               required
             ></textarea>
@@ -50,10 +52,9 @@ const Contact = () => {
             <button
               disabled={isSubmitting}
               aria-label={isSubmitting ? "Submitting" : "Send it my way!"}
-              // className="hover:bg-secondary hover:border-secondary mt-6 flex h-[60px] items-center justify-center border-2 border-white px-4 py-4 text-white duration-300"
               className={`${
-                isSubmitting && "bg-secondary border-secondary"
-              } hover:bg-secondary hover:border-secondary mt-6 flex h-[60px] items-center justify-center border-2 border-white px-4 py-4 text-white duration-300`}
+                isSubmitting && "bg-secondary border-none"
+              } hover:bg-secondary hover:border-secondary mt-6 flex h-[60px] items-center justify-center rounded border-2 border-white px-4 py-4 font-semibold text-white duration-300`}
             >
               {isSubmitting ? (
                 <BeatLoader color="#ccd6f6" />

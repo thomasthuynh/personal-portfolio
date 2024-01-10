@@ -15,12 +15,13 @@ const About = () => {
 
           <div>
             <p className="text-gray lg:text-lg">
-              Hey! I'm a Front End Developer with a chemical engineering
-              background. I initially worked in the pharmaceutical industry
-              before diving into tech. My journey's all about mixing analytical
-              skills with digital creativity. I'm passionate about building
-              user-friendly websites that not only look great but make life
-              easier. Let's build something awesome together!
+              I'm a Front End Developer with a chemical engineering background.
+              I initially worked in the pharmaceutical industry focusing on
+              regulatory compliance and data management before diving into tech.
+              My journey's all about mixing analytical skills with digital
+              creativity. I'm passionate about building user-friendly websites
+              that not only look great but make life easier. Let's build
+              something awesome together!
             </p>
           </div>
         </div>

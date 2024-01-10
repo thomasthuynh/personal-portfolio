@@ -1,13 +1,13 @@
 import Language from "../ui/Language";
 
-import HTML from "../assets/html5-original.svg";
-import CSS from "../assets/css3-original.svg";
-import JavaScript from "../assets/javascript-original.svg";
-import TypeScript from "../assets/typescript-original.svg";
-import Tailwind from "../assets/tailwindcss-plain.svg";
-import SASS from "../assets/sass-original.svg";
-import React from "../assets/react-original.svg";
-import Firebase from "../assets/firebase-plain.svg";
+import HTML from "../assets/languages/html5-original.svg";
+import CSS from "../assets/languages/css3-original.svg";
+import JavaScript from "../assets/languages/javascript-original.svg";
+import TypeScript from "../assets/languages/typescript-original.svg";
+import Tailwind from "../assets/languages/tailwindcss-plain.svg";
+import SASS from "../assets/languages/sass-original.svg";
+import React from "../assets/languages/react-original.svg";
+import Firebase from "../assets/languages/firebase-plain.svg";
 
 const Skills = () => {
   return (

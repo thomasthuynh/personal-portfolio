@@ -2,7 +2,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Project = ({ name, image, languages, description, github, live }) => {
   return (
-    <div className="group relative mb-8 overflow-hidden rounded-lg md:mb-16">
+    <div className="group relative mb-8 overflow-hidden rounded md:mb-16">
       <img
         src={image}
         alt={name}
@@ -16,10 +16,18 @@ const Project = ({ name, image, languages, description, github, live }) => {
           <p className="xs:text-base py-2 text-sm sm:pb-4">{languages}</p>
           <p className="hidden sm:flex">{description}</p>
           <div className="flex gap-6 pt-2 sm:pt-6">
-            <a href={github} target="_blank" className="hover:opacity-80">
+            <a
+              href={github}
+              target="_blank"
+              className="duration-150 hover:opacity-80"
+            >
               <FaGithub size={25} className="xs:scale-100 scale-90" />
             </a>
-            <a href={live} target="_blank" className="hover:opacity-80">
+            <a
+              href={live}
+              target="_blank"
+              className="duration-150 hover:opacity-80"
+            >
               <FaExternalLinkAlt size={25} className="xs:scale-100 scale-90" />
             </a>
           </div>

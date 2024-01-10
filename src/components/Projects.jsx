@@ -1,8 +1,8 @@
 import Project from "./Project";
 
-import Audiophile from "../assets/Audiophile.png";
-import NetflixClone from "../assets/NetflixClone.jpg";
-import Photosnap from "../assets/Photosnap.png";
+import Audiophile from "../assets/projects/Audiophile.png";
+import NetflixClone from "../assets/projects/NetflixClone.jpg";
+import Photosnap from "../assets/projects/Photosnap.png";
 
 const Projects = () => {
   return (

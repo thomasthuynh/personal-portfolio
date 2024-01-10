@@ -18,29 +18,34 @@ const Nav = () => {
 
         {/* MENU */}
         <div className="hidden md:flex">
-          <ul className="flex gap-12 font-semibold uppercase tracking-wider">
-            <li className="hover:opacity-80">
+          <ul className="flex items-center gap-12 font-semibold uppercase tracking-wider">
+            <li className="duration-150 hover:opacity-80">
               <Link to="home" smooth={true} duration={500}>
                 Home
               </Link>
             </li>
-            <li className="hover:opacity-80">
+            <li className="duration-150 hover:opacity-80">
               <Link to="about" smooth={true} duration={500}>
                 About
               </Link>
             </li>
-            <li className="hover:opacity-80">
+            <li className="duration-150 hover:opacity-80">
               <Link to="skills" smooth={true} duration={500}>
                 Skills
               </Link>
             </li>
-            <li className="hover:opacity-80">
+            <li className="duration-150 hover:opacity-80">
               <Link to="projects" smooth={true} duration={500} offset={-100}>
                 Projects
               </Link>
             </li>
-            <li className="hover:opacity-80">
-              <Link to="contact" smooth={true} duration={500}>
+            <li className="duration-150 hover:opacity-80">
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                className="bg-secondary rounded p-4"
+              >
                 Contact
               </Link>
             </li>
