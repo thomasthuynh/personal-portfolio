@@ -5,7 +5,7 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const Home = () => {
   return (
-    <header className="bg-primary relative h-screen w-full">
+    <header name="home" className="bg-primary relative h-screen w-full">
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col justify-center">
         <p className="text-secondary font-semibold">Hi, my name is</p>
         <h1 className="py-2 text-4xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl">
@@ -14,7 +14,7 @@ const Home = () => {
         <h2 className="text-gray text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
           I'm a Front End Developer
         </h2>
-        <p className="text-gray pt-6 pb-4 xl:pb-6 lg:text-lg">
+        <p className="text-gray pb-4 pt-6 lg:text-lg xl:pb-6">
           I'm a front-end developer specializing in building responsive and
           interactive web applications. Currently, I'm focused on building a
           variety of front-end based projects while learning back-end

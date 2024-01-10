@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
+
 import { FaBars } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 
@@ -6,44 +8,112 @@ const Nav = () => {
   const [hamburgerToggled, setHamburgerToggled] = useState(false);
 
   return (
-    <nav className="bg-primary fixed z-10 flex h-[80px] w-full items-center justify-between px-4 text-white">
-      {/* LOGO */}
-      <div>
-        <p>Thomas Huynh</p>
-      </div>
+    <nav className="bg-primary fixed left-0 top-0 z-10 mx-auto w-full text-white">
+      <div className="mx-auto flex w-[90%] max-w-[2560px] items-center justify-between py-6">
+        {/* LOGO */}
+        <div>
+          <p>Thomas Huynh</p>
+        </div>
 
-      {/* MENU */}
-      <div className="hidden md:flex">
-        <ul className="flex gap-12 text-lg">
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </div>
+        {/* MENU */}
+        <div className="hidden md:flex">
+          <ul className="flex gap-12">
+            <li className="hover:opacity-80">
+              <Link to="home" smooth={true} duration={500}>
+                Home
+              </Link>
+            </li>
+            <li className="hover:opacity-80">
+              <Link to="about" smooth={true} duration={500}>
+                About
+              </Link>
+            </li>
+            <li className="hover:opacity-80">
+              <Link to="skills" smooth={true} duration={500}>
+                Skills
+              </Link>
+            </li>
+            <li className="hover:opacity-80">
+              <Link to="projects" smooth={true} duration={500} offset={-75}>
+                Projects
+              </Link>
+            </li>
+            <li className="hover:opacity-80">
+              <Link to="contact" smooth={true} duration={500}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
 
-      {/* HAMBURGER */}
-      <div
-        onClick={() => setHamburgerToggled(!hamburgerToggled)}
-        className="z-10 cursor-pointer md:hidden"
-      >
-        {hamburgerToggled ? <FaXmark size={20} /> : <FaBars size={20} />}
+        {/* HAMBURGER */}
+        <div
+          onClick={() => setHamburgerToggled(!hamburgerToggled)}
+          className="z-10 cursor-pointer md:hidden"
+        >
+          {hamburgerToggled ? <FaXmark size={20} /> : <FaBars size={20} />}
+        </div>
       </div>
 
       {/* MOBILE MENU */}
       <div
         className={`${
-          hamburgerToggled ? "right-0" : "-right-full"
+          hamburgerToggled ? "right-0 opacity-100" : "-right-full opacity-0"
         } bg-primary absolute top-0 h-screen w-full duration-300`}
       >
-        <div className="flex h-full items-center justify-center">
-          <ul className="flex h-1/2 flex-col items-center justify-center gap-8 text-lg">
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+        <div className="flex h-full w-full items-center justify-center">
+          <ul className="flex h-1/2 flex-col items-center justify-center gap-12 text-2xl">
+            <li>
+              <Link
+                to="home"
+                smooth={true}
+                duration={500}
+                onClick={() => setHamburgerToggled(!hamburgerToggled)}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                onClick={() => setHamburgerToggled(!hamburgerToggled)}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="skills"
+                smooth={true}
+                duration={500}
+                onClick={() => setHamburgerToggled(!hamburgerToggled)}
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="projects"
+                smooth={true}
+                duration={500}
+                offset={-75}
+                onClick={() => setHamburgerToggled(!hamburgerToggled)}
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                onClick={() => setHamburgerToggled(!hamburgerToggled)}
+              >
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

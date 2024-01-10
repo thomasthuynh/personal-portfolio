@@ -1,27 +1,26 @@
-import React from "react";
-
 const About = () => {
   return (
-    <section className="bg-primary h-screen w-full">
-      <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col justify-center text-white">
+    <section name="about" className="bg-primary h-screen w-full">
+      <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-white">
         <h2 className="pb-12 text-center text-4xl font-bold">
           About <span className="text-secondary">Me</span>
         </h2>
 
-        <div className="grid gap-6 md:gap-8 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 md:gap-8">
           <div>
-            <p className="text-3xl md:text-4xl font-bold md:text-right">
+            <p className="text-3xl font-bold md:text-right md:text-4xl">
               Hi. I'm Thomas, nice to meet you. Please take a look around.
             </p>
           </div>
 
           <div>
             <p className="text-gray lg:text-lg">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum,
-              minus necessitatibus numquam dignissimos molestiae explicabo
-              quisquam, sit pariatur vel consectetur nulla sed, quod suscipit
-              cum? Nobis est, molestias blanditiis enim ducimus non quibusdam
-              molestiae tenetur ab libero illo?
+              Hey! I'm a Front End Developer with a chemical engineering
+              background. I initially worked in the pharmaceutical industry
+              before diving into tech. My journey's all about mixing analytical
+              skills with digital creativity. I'm passionate about building
+              user-friendly websites that not only look great but make life
+              easier. Let's build something awesome together!
             </p>
           </div>
         </div>

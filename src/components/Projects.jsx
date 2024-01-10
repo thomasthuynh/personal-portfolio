@@ -1,17 +1,18 @@
 import Project from "./Project";
+
 import Audiophile from "../assets/Audiophile.png";
 import NetflixClone from "../assets/NetflixClone.jpg";
 import Photosnap from "../assets/Photosnap.png";
 
 const Projects = () => {
   return (
-    <section className="bg-primary w-full">
+    <section name="projects" className="bg-primary w-full">
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-white">
-        <h2 className="text-4xl font-bold">
+        <h2 className="text-center text-4xl font-bold">
           My <span className="text-secondary">Projects</span>
         </h2>
 
-        <p className="text-gray pb-12 pt-4 text-center lg:text-lg">
+        <p className="text-gray pb-12 pt-4 lg:text-lg">
           Check out some of my recent work.
         </p>
 

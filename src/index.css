@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply bg-primary;
+}
+
 li {
   @apply cursor-pointer;
 }
