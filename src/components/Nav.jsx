@@ -9,10 +9,10 @@ const Nav = () => {
   const [hamburgerToggled, setHamburgerToggled] = useState(false);
 
   return (
-    <nav className="bg-primary fixed left-0 top-0 z-10 mx-auto w-full text-white">
+    <nav className="fixed left-0 top-0 z-10 mx-auto w-full bg-primary text-white">
       <div className="mx-auto flex w-[90%] max-w-[2560px] items-center justify-between py-4">
         {/* LOGO */}
-        <div className="w-20">
+        <div>
           <img src={Logo} alt="TH" />
         </div>
 
@@ -44,7 +44,7 @@ const Nav = () => {
                 to="contact"
                 smooth={true}
                 duration={500}
-                className="bg-secondary rounded p-4"
+                className="rounded bg-secondary p-4"
               >
                 Contact
               </Link>
@@ -65,7 +65,7 @@ const Nav = () => {
       <div
         className={`${
           hamburgerToggled ? "right-0 opacity-100" : "-right-full opacity-0"
-        } bg-primary absolute top-0 h-screen w-full duration-300`}
+        } absolute top-0 h-screen w-full bg-primary duration-300`}
       >
         <div className="flex h-full w-full items-center justify-center">
           <ul className="flex h-1/2 flex-col items-center justify-center gap-12 text-2xl font-semibold uppercase tracking-wider">
