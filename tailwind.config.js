@@ -9,6 +9,22 @@ export default {
         white: "#ccd6f6",
         gray: "#8892b0",
       },
+      keyframes: {
+        wave: {
+          "0%": {transform: "rotate(0deg)"},
+          "50%": {transform: "rotate(30deg)"},
+          "100%": {transform: "rotate(0deg)"}
+        },
+        scroll: {
+          "0%": {transform: "translateY(0)"},
+          "50%": {transform: "translateY(8px)"},
+          "100%": {transform: "translateY(0)"},
+        }
+      },
+      animation: {
+        wave: "wave 750ms ease infinite",
+        scroll: "scroll 1000ms ease infinite"
+      }
     },
     screens: {
       xs: "480px",

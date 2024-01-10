@@ -2,21 +2,26 @@ import { Link } from "react-scroll";
 
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { BsFillPersonLinesFill, BsMouse } from "react-icons/bs";
+// import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const Home = () => {
   return (
     <header name="home" className="bg-primary relative h-screen w-full">
-      <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col justify-center">
-        <p className="text-secondary font-semibold">Hi, my name is</p>
-        <h1 className="py-2 text-4xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl">
-          Thomas Huynh
-        </h1>
-        <h2 className="text-gray text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
-          I'm a Front End Developer
+      <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-center">
+        <div>
+          <p className="font-semibold text-white">
+            Hi, nice to meet you{" "}
+            <span className="animate-wave inline-block text-xl">👋</span>
+          </p>
+          <h1 className="py-2 text-4xl font-bold text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+            I'm <span className="text-secondary">Thomas</span>
+          </h1>
+        </div>
+        <h2 className="text-gray text-4xl font-bold sm:text-5xl lg:text-6xl xl:text-7xl">
+          A Front End Developer
         </h2>
-        <p className="text-gray pb-4 pt-6 lg:text-lg xl:pb-6">
+        <p className="text-gray pb-4 pt-6 lg:text-lg">
           I'm a front-end developer specializing in building responsive and
           interactive web applications. Currently, I'm focused on building a
           variety of front-end based projects while learning back-end
@@ -61,16 +66,12 @@ const Home = () => {
           </li>
         </ul>
         <Link
-          to="projects"
+          to="about"
           smooth={true}
           duration={500}
-          offset={-100}
-          className="hover:bg-secondary hover:border-secondary group flex items-center self-start border-2 border-white px-4 py-2 text-white duration-300"
+          className="animate-scroll hover:text-secondary absolute bottom-8 text-white duration-300"
         >
-          View Work
-          <span className="ml-2 duration-300 group-hover:rotate-90">
-            <HiOutlineArrowNarrowRight />
-          </span>
+          <BsMouse size={30} />
         </Link>
       </div>
 
@@ -80,7 +81,7 @@ const Home = () => {
             <a
               href="https://www.linkedin.com/in/thomasthuynh/"
               target="_blank"
-              className="flex translate-x-[-75px] justify-between bg-[#0A66C2] p-4 duration-300 hover:translate-x-0"
+              className="hover:text-secondary flex translate-x-[-75px] justify-between p-4 text-white duration-300 hover:translate-x-0"
             >
               <p>LinkedIn</p>
               <span className="ml-4">
@@ -92,7 +93,7 @@ const Home = () => {
             <a
               href="https://github.com/thomasthuynh"
               target="_blank"
-              className="flex translate-x-[-75px] justify-between bg-zinc-900 p-4 duration-300 hover:translate-x-0"
+              className="hover:text-secondary flex translate-x-[-75px] justify-between p-4 text-white duration-300 hover:translate-x-0"
             >
               <p>Github</p>
               <span className="ml-4">
@@ -103,7 +104,7 @@ const Home = () => {
           <li>
             <a
               href="mailto:thomas_tth@live.com"
-              className="flex translate-x-[-75px] justify-between bg-emerald-600 p-4 duration-300 hover:translate-x-0"
+              className="hover:text-secondary flex translate-x-[-75px] justify-between p-4 text-white duration-300 hover:translate-x-0"
             >
               <p>Email</p>
               <span className="ml-4">
@@ -114,7 +115,7 @@ const Home = () => {
           <li>
             <a
               href="mailto:thomas_tth@live.com"
-              className="flex translate-x-[-75px] justify-between bg-slate-600 p-4 duration-300 hover:translate-x-0"
+              className="hover:text-secondary flex translate-x-[-75px] justify-between p-4 text-white duration-300 hover:translate-x-0"
             >
               <p>Resume</p>
               <span className="ml-4">

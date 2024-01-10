@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 
-import Logo from "../assets/Logo.png"
+import Logo from "../assets/Logo.png";
 import { FaBars } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 
@@ -18,7 +18,7 @@ const Nav = () => {
 
         {/* MENU */}
         <div className="hidden md:flex">
-          <ul className="flex gap-12 text-lg">
+          <ul className="flex gap-12 font-semibold uppercase tracking-wider">
             <li className="hover:opacity-80">
               <Link to="home" smooth={true} duration={500}>
                 Home
@@ -63,7 +63,7 @@ const Nav = () => {
         } bg-primary absolute top-0 h-screen w-full duration-300`}
       >
         <div className="flex h-full w-full items-center justify-center">
-          <ul className="flex h-1/2 flex-col items-center justify-center gap-12 text-2xl">
+          <ul className="flex h-1/2 flex-col items-center justify-center gap-12 text-2xl font-semibold uppercase tracking-wider">
             <li>
               <Link
                 to="home"

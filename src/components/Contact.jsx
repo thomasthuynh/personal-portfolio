@@ -50,7 +50,10 @@ const Contact = () => {
             <button
               disabled={isSubmitting}
               aria-label={isSubmitting ? "Submitting" : "Send it my way!"}
-              className="hover:bg-secondary hover:border-secondary mt-6 flex h-[60px] items-center justify-center border-2 border-white px-4 py-4 text-white duration-300"
+              // className="hover:bg-secondary hover:border-secondary mt-6 flex h-[60px] items-center justify-center border-2 border-white px-4 py-4 text-white duration-300"
+              className={`${
+                isSubmitting && "bg-secondary border-secondary"
+              } hover:bg-secondary hover:border-secondary mt-6 flex h-[60px] items-center justify-center border-2 border-white px-4 py-4 text-white duration-300`}
             >
               {isSubmitting ? (
                 <BeatLoader color="#ccd6f6" />
