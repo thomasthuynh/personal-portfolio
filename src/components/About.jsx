@@ -6,10 +6,11 @@ const About = () => {
           About <span className="text-secondary">Me</span>
         </h2>
 
-        <div className="grid gap-6 md:grid-cols-2 md:gap-8">
+        <div className="grid items-center gap-6 md:grid-cols-2 md:gap-8">
           <div>
             <p className="text-3xl font-bold md:text-right md:text-4xl">
-              Hi. I'm Thomas, nice to meet you. Please take a look around.
+              Hey, thanks for dropping by! Please feel free to look around.
+              Here's a bit more about me.
             </p>
           </div>
 
