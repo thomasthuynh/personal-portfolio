@@ -98,7 +98,7 @@ const Home = () => {
           </li>
           <li>
             <a
-              href="/src/assets/thomas-huynh-resume.pdf"
+              href="../src/assets/thomas-huynh-resume.pdf"
               target="_blank"
               className="flex p-2 duration-150 hover:scale-110 hover:text-secondary"
             >
@@ -155,7 +155,7 @@ const Home = () => {
           </li>
           <li>
             <a
-              href="/src/assets/thomas-huynh-resume.pdf"
+              href="../src/assets/thomas-huynh-resume.pdf"
               target="_blank"
               className="flex translate-x-[-75px] justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
             >
