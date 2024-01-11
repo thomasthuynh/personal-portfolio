@@ -122,7 +122,7 @@ const Home = () => {
             <a
               href="https://www.linkedin.com/in/thomasthuynh/"
               target="_blank"
-              className="flex translate-x-[-88px] items-center justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
+              className="flex translate-x-[-95px] items-center justify-between p-4 tracking-wider text-white duration-300 hover:translate-x-0 hover:text-secondary"
             >
               <p>LinkedIn</p>
               <span className="ml-4">
@@ -134,7 +134,7 @@ const Home = () => {
             <a
               href="https://github.com/thomasthuynh"
               target="_blank"
-              className="flex translate-x-[-88px] items-center justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
+              className="flex translate-x-[-95px] items-center justify-between p-4 tracking-wider text-white duration-300 hover:translate-x-0 hover:text-secondary"
             >
               <p>Github</p>
               <span className="ml-4">
@@ -145,7 +145,7 @@ const Home = () => {
           <li>
             <a
               href="mailto:thomas_tth@live.com"
-              className="flex translate-x-[-88px] items-center justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
+              className="flex translate-x-[-95px] items-center justify-between p-4 tracking-wider text-white duration-300 hover:translate-x-0 hover:text-secondary"
             >
               <p>Email</p>
               <span className="ml-4">
@@ -157,7 +157,7 @@ const Home = () => {
             <a
               href="/thomas-huynh-resume.pdf"
               target="_blank"
-              className="flex translate-x-[-88px] items-center justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
+              className="flex translate-x-[-95px] items-center justify-between p-4 tracking-wider text-white duration-300 hover:translate-x-0 hover:text-secondary"
             >
               <p>Resume</p>
               <span className="ml-4">
