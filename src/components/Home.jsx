@@ -117,12 +117,12 @@ const Home = () => {
       </div>
 
       <div className="fixed bottom-1/2 left-0 hidden translate-y-1/2 xl:flex">
-        <ul className="flex flex-col text-white">
+        <ul className="flex flex-col font-semibold uppercase text-white">
           <li>
             <a
               href="https://www.linkedin.com/in/thomasthuynh/"
               target="_blank"
-              className="flex translate-x-[-75px] justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
+              className="flex translate-x-[-88px] items-center justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
             >
               <p>LinkedIn</p>
               <span className="ml-4">
@@ -134,7 +134,7 @@ const Home = () => {
             <a
               href="https://github.com/thomasthuynh"
               target="_blank"
-              className="flex translate-x-[-75px] justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
+              className="flex translate-x-[-88px] items-center justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
             >
               <p>Github</p>
               <span className="ml-4">
@@ -145,7 +145,7 @@ const Home = () => {
           <li>
             <a
               href="mailto:thomas_tth@live.com"
-              className="flex translate-x-[-75px] justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
+              className="flex translate-x-[-88px] items-center justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
             >
               <p>Email</p>
               <span className="ml-4">
@@ -157,7 +157,7 @@ const Home = () => {
             <a
               href="/thomas-huynh-resume.pdf"
               target="_blank"
-              className="flex translate-x-[-75px] justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
+              className="flex translate-x-[-88px] items-center justify-between p-4 text-white duration-300 hover:translate-x-0 hover:text-secondary"
             >
               <p>Resume</p>
               <span className="ml-4">
