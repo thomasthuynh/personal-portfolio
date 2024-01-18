@@ -1,6 +1,6 @@
-const Language = ({ icon, name }) => {
+const Language = ({ icon, name, style }) => {
   return (
-    <div className="group relative mb-6 flex w-full max-w-[90px] flex-col items-center p-2 sm:max-w-[100px]">
+    <div className={`group relative mb-6 flex w-full max-w-[90px] flex-col items-center p-2 sm:max-w-[100px] lg:mb-12 ${style}`}>
       <img
         src={icon}
         alt={name}
