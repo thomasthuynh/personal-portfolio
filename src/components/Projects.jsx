@@ -3,6 +3,7 @@ import Project from "./Project";
 import Audiophile from "../assets/projects/Audiophile.png";
 import NetflixClone from "../assets/projects/NetflixClone.jpg";
 import Photosnap from "../assets/projects/Photosnap.png";
+import WhosThatPokemon from "../assets/projects/WhosThatPokemon.png"
 
 const Projects = () => {
   return (
@@ -39,6 +40,14 @@ const Projects = () => {
           description="A photography based React site utilizing grid layouts for a structured and visually appealing interface coupled with SCSS partials for styling arrangement. The objective was to create a focus on aesthetic design and UX development, ensuring an intuitive and user-friendly experience."
           github="https://github.com/thomasthuynh/photosnap"
           live="https://photosnapstories.netlify.app/"
+        />
+        <Project 
+        name="Who's That Pokemon?"
+        image={WhosThatPokemon}
+        languages="JavaScript, SASS, HTML"
+        description="A Pokemon generator built with vanilla JavaScript utilizing the PokeAPI for data implementation. Find information on all your favourite Pokemon through a manual or random search."
+        github="https://github.com/junoprojects/whosThatPokemonThomasAndRebecca"
+        live="https://whosthatpokemonweb.netlify.app/"
         />
       </div>
     </section>
