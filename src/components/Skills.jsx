@@ -23,7 +23,7 @@ const Skills = () => {
           Here are the technologies I've worked with.
         </p>
 
-        <div className="grid w-full grid-cols-2 place-items-center gap-2 xs:grid-cols-4 lg:grid-cols-5">
+        <div className="grid w-full grid-cols-2 place-items-center gap-y-8 xs:grid-cols-4 lg:grid-cols-5 lg:gap-y-12">
           <Language icon={HTML} name="HTML" />
           <Language icon={CSS} name="CSS" />
           <Language icon={JavaScript} name="JavaScript" />
