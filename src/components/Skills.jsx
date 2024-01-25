@@ -13,7 +13,10 @@ import MongoDB from "../assets/languages/mongodb-original.svg";
 
 const Skills = () => {
   return (
-    <section name="skills" className="h-screen w-full bg-primary">
+    <section
+      name="skills"
+      className="min-h-screen w-full bg-primary py-16"
+    >
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-white">
         <h2 className="text-center text-4xl font-bold">
           My Technology <span className="text-secondary">Stack</span>
