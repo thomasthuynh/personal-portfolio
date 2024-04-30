@@ -94,7 +94,7 @@ const Nav = () => {
                 to="skills"
                 smooth={true}
                 duration={500}
-                offset={-50}
+                offset={-100}
                 onClick={() => setHamburgerToggled(!hamburgerToggled)}
               >
                 Skills

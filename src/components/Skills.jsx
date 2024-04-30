@@ -10,12 +10,14 @@ import Tailwind from "../assets/languages/tailwindcss-plain.svg";
 import SASS from "../assets/languages/sass-original.svg";
 import Node from "../assets/languages/nodejs-original.svg";
 import MongoDB from "../assets/languages/mongodb-original.svg";
+import SQL from "../assets/languages/sqldeveloper-original.svg";
+import Python from "../assets/languages/python-original.svg";
 
 const Skills = () => {
   return (
     <section
       name="skills"
-      className="min-h-screen w-full bg-primary py-16 flex justify-center items-center"
+      className="flex min-h-screen w-full items-center justify-center bg-primary pb-24 xs:pb-36 md:pb-0"
     >
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-white">
         <h2 className="text-center text-4xl font-bold">
@@ -26,7 +28,7 @@ const Skills = () => {
           Here are the technologies I've worked with.
         </p>
 
-        <div className="grid w-full grid-cols-2 place-items-center gap-y-8 xs:grid-cols-4 lg:grid-cols-5 lg:gap-y-12">
+        <div className="grid w-full grid-cols-2 place-items-center gap-y-8 xs:grid-cols-3 md:grid-cols-4 lg:gap-y-10">
           <Language icon={HTML} name="HTML" />
           <Language icon={CSS} name="CSS" />
           <Language icon={JavaScript} name="JavaScript" />
@@ -35,16 +37,10 @@ const Skills = () => {
           <Language icon={Node} name="Node JS" />
           <Language icon={MongoDB} name="MongoDB" />
           <Language icon={Firebase} name="Firebase" />
-          <Language
-            icon={Tailwind}
-            name="Tailwind"
-            style="xs:col-start-2 lg:col-start-auto"
-          />
-          <Language
-            icon={SASS}
-            name="SASS"
-            style="xs:col-start-3 lg:col-start-auto"
-          />
+          <Language icon={Tailwind} name="Tailwind" />
+          <Language icon={SASS} name="SASS" />
+          <Language icon={SQL} name="SQL" />
+          <Language icon={Python} name="Python" />
         </div>
       </div>
     </section>
