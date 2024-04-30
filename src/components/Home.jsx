@@ -40,7 +40,7 @@ const Home = () => {
           }}
           className="text-4xl font-bold text-gray sm:text-5xl lg:text-6xl xl:text-7xl"
         >
-          A Front End Developer
+          A Full Stack Developer
         </motion.h2>
         <motion.p
           initial="hidden"
@@ -53,10 +53,14 @@ const Home = () => {
           }}
           className="pb-4 pt-6 text-gray lg:text-lg"
         >
-          I'm a front-end developer specializing in building responsive and
+          {/* I'm a front-end developer specializing in building responsive and
           interactive web applications. Currently, I'm focused on building a
           variety of front-end based projects while learning back-end
-          technologies.
+          technologies. */}
+          I'm a full-stack developer specializing in creating (and occasionally
+          designing) responsive and engaging web applications. I build and
+          enhance a wide range of projects, utilizing a variety of both
+          front-end and back-end technologies.
         </motion.p>
         <motion.ul
           initial="hidden"

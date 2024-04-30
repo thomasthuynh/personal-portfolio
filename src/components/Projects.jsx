@@ -10,7 +10,7 @@ const Projects = () => {
     <section name="projects" className="bg-primary w-full">
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-white">
         <h2 className="text-center text-4xl font-bold">
-          My <span className="text-secondary">Projects</span>
+          Recent <span className="text-secondary">Projects</span>
         </h2>
 
         <p className="text-gray pb-12 pt-4 lg:text-lg">
@@ -41,14 +41,14 @@ const Projects = () => {
           github="https://github.com/thomasthuynh/photosnap"
           live="https://photosnapstories.netlify.app/"
         />
-        <Project 
+        {/* <Project 
         name="Who's That Pokemon?"
         image={WhosThatPokemon}
         languages="JavaScript, SASS, HTML"
         description="A Pokemon generator built with vanilla JavaScript utilizing the PokeAPI for data implementation. Find information on all your favourite Pokemon through a manual or random search."
         github="https://github.com/junoprojects/whosThatPokemonThomasAndRebecca"
         live="https://whosthatpokemonweb.netlify.app/"
-        />
+        /> */}
       </div>
     </section>
   );
