@@ -23,7 +23,7 @@ const Projects = () => {
           languages="React, TypeScript, Tailwind"
           description="A dynamic React e-Commerce platform specializing in audio peripherals. This site features unique product pages accessible through dynamic routing and enables users to add items to their cart and make purchases through a checkout process backed by secure form validation."
           github="https://github.com/thomasthuynh/audiophile-ecommerce-website"
-          live="https://audiophileamplify.netlify.app/"
+          live="https://audiophile-amplify.vercel.app/"
         />
         <Project
           name="Netflix Clone"
@@ -31,24 +31,24 @@ const Projects = () => {
           languages="React, Firebase, Tailwind"
           description="A full-stack movie trailer application created using React as a front-end for the UI and protected routing, and Firebase as a back-end for user authentication and cloud storage, allowing users to create their own account and save their favourite movies."
           github="https://github.com/thomasthuynh/netflix-trailer-app"
-          live="https://netflixtrailerapp.netlify.app/"
+          live="https://netflix-trailer-app.vercel.app/"
         />
         <Project
           name="Photosnap"
           image={Photosnap}
-          languages="React, TypeScript, SASS"
+          languages="React, TypeScript, SASS/CSS"
           description="A photography based React site utilizing grid layouts for a structured and visually appealing interface coupled with SCSS partials for styling arrangement. The objective was to create a focus on aesthetic design and UX development, ensuring an intuitive and user-friendly experience."
           github="https://github.com/thomasthuynh/photosnap"
-          live="https://photosnapstories.netlify.app/"
+          live="https://photosnap-designs.vercel.app/"
         />
-        {/* <Project 
+        <Project 
         name="Who's That Pokemon?"
         image={WhosThatPokemon}
-        languages="JavaScript, SASS, HTML"
+        languages="JavaScript, SASS/CSS, HTML"
         description="A Pokemon generator built with vanilla JavaScript utilizing the PokeAPI for data implementation. Find information on all your favourite Pokemon through a manual or random search."
         github="https://github.com/junoprojects/whosThatPokemonThomasAndRebecca"
         live="https://whosthatpokemonweb.netlify.app/"
-        /> */}
+        />
       </div>
     </section>
   );
