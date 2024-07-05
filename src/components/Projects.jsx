@@ -3,17 +3,18 @@ import Project from "./Project";
 import Audiophile from "../assets/projects/Audiophile.png";
 import NetflixClone from "../assets/projects/NetflixClone.jpg";
 import Photosnap from "../assets/projects/Photosnap.png";
-import WhosThatPokemon from "../assets/projects/WhosThatPokemon.png"
+import WhosThatPokemon from "../assets/projects/WhosThatPokemon.png";
+import VirtualR from "../assets/projects/VirtualR.png"
 
 const Projects = () => {
   return (
-    <section name="projects" className="bg-primary w-full">
+    <section name="projects" className="w-full bg-primary">
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-white">
         <h2 className="text-center text-4xl font-bold">
           Recent <span className="text-secondary">Projects</span>
         </h2>
 
-        <p className="text-gray pb-12 pt-4 lg:text-lg">
+        <p className="pb-12 pt-4 text-gray lg:text-lg">
           Check out some of my recent work.
         </p>
 
@@ -41,13 +42,21 @@ const Projects = () => {
           github="https://github.com/thomasthuynh/photosnap"
           live="https://photosnap-designs.vercel.app/"
         />
-        <Project 
+        {/* <Project 
         name="Who's That Pokemon?"
         image={WhosThatPokemon}
         languages="JavaScript, SASS/CSS, HTML"
         description="A Pokemon generator built with vanilla JavaScript utilizing the PokeAPI for data implementation. Find information on all your favourite Pokemon through a manual or random search."
         github="https://github.com/junoprojects/whosThatPokemonThomasAndRebecca"
         live="https://whosthatpokemonweb.netlify.app/"
+        /> */}
+        <Project
+          name="VirtualR"
+          image={VirtualR}
+          languages="React, Tailwind"
+          description="UI for a virtual reality landing page, designed to showcase modern web development techniques. This project highlights the fast and responsive capabilities of front-end technologies and is currently a work in progress."
+          github="#"
+          live="https://virtualr-dev.vercel.app/"
         />
       </div>
     </section>
