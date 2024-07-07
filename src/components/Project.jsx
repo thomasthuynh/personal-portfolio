@@ -19,7 +19,9 @@ const Project = ({ name, image, languages, description, github, live }) => {
             <a
               href={github}
               target="_blank"
-              className="flex items-center gap-2 duration-150 hover:opacity-80 xs:gap-3"
+              className={`flex items-center gap-2 duration-150 hover:opacity-80 xs:gap-3 ${
+                name === "VirtualR" && "hover:cursor-not-allowed"
+              }`}
             >
               <p className="font-semibold uppercase">View Code</p>
               <FaGithub size={25} className="scale-90 xs:scale-100" />

@@ -55,7 +55,7 @@ const Projects = () => {
           image={VirtualR}
           languages="React, Tailwind"
           description="UI for a virtual reality landing page, designed to showcase modern web development techniques. This project highlights the fast and responsive capabilities of front-end technologies and is currently a work in progress."
-          github="#"
+          // github=""
           live="https://virtualr-dev.vercel.app/"
         />
       </div>

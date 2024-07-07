@@ -26,7 +26,10 @@ const Home = () => {
             </span>
           </p>
           <h1 className="py-2 text-4xl font-bold text-white sm:text-5xl lg:text-6xl xl:text-7xl">
-            I'm <span className="text-secondary">Thomas</span>
+            I'm{" "}
+            <span className="text-secondary">
+              Thomas
+            </span>
           </h1>
         </motion.div>
         <motion.h2
