@@ -13,7 +13,7 @@ const Nav = () => {
     <motion.nav
       initial="hidden"
       whileInView="visible"
-      transition={{ delay: 1.25, duration: 0.75 }}
+      transition={{ delay: 3.5, duration: 0.75 }}
       viewport={{ once: true }}
       variants={{
         hidden: { opacity: 0, y: -20 },

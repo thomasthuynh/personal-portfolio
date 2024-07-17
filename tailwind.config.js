@@ -27,6 +27,9 @@ export default {
         wave: "wave 750ms ease infinite",
         scroll: "scroll 1000ms ease infinite",
       },
+      boxShadow: {
+        "spread-secondary": "0 0 2px 2px rgba(56, 189, 248, 1)",
+      },
     },
     screens: {
       xs: "480px",

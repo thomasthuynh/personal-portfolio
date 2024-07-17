@@ -14,7 +14,7 @@ const Home = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          transition={{ delay: 0.25, duration: 1 }}
+          transition={{ delay: 2.25, duration: 1 }}
           viewport={{ once: true }}
           variants={{
             hidden: { opacity: 0, x: 100 },
@@ -27,33 +27,33 @@ const Home = () => {
               👋
             </span>
           </p>
-          <h1 className="py-2 text-4xl font-bold text-white sm:text-5xl lg:text-6xl xl:text-7xl">
-            I'm <span className="text-secondary">Thomas</span>
+          <h1 className="py-2 text-4xl font-semibold text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+            I'm <span className="text-secondary">Thomas.</span>
           </h1>
         </motion.div>
         <motion.h2
           initial="hidden"
           whileInView="visible"
-          transition={{ delay: 0.5, duration: 0.75 }}
+          transition={{ delay: 2.5, duration: 0.75 }}
           viewport={{ once: true }}
           variants={{
             hidden: { opacity: 0, x: 75 },
             visible: { opacity: 100, x: 0 },
           }}
-          className="text-4xl font-bold text-gray sm:text-5xl lg:text-6xl xl:text-7xl"
+          className="text-4xl font-semibold text-gray sm:text-5xl lg:text-6xl xl:text-7xl"
         >
           A Full Stack Developer
         </motion.h2>
         <motion.p
           initial="hidden"
           whileInView="visible"
-          transition={{ delay: 0.75, duration: 0.75 }}
+          transition={{ delay: 2.75, duration: 0.75 }}
           viewport={{ once: true }}
           variants={{
             hidden: { opacity: 0, x: 50 },
             visible: { opacity: 100, x: 0 },
           }}
-          className="pb-4 pt-6 text-gray lg:text-lg w-full md:w-4/5"
+          className="pb-4 pt-6 text-gray lg:text-lg w-full md:w-5/6"
         >
           I specialize in developing (and occasionally
           designing) responsive web applications. I build and
@@ -63,7 +63,7 @@ const Home = () => {
         <motion.ul
           initial="hidden"
           whileInView="visible"
-          transition={{ delay: 1, duration: 0.75 }}
+          transition={{ delay: 3, duration: 0.75 }}
           viewport={{ once: true }}
           variants={{
             hidden: { opacity: 0, y: 50 },
@@ -118,7 +118,7 @@ const Home = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            transition={{ delay: 1.25, duration: 0.75 }}
+            transition={{ delay: 3.25, duration: 0.75 }}
             viewport={{ once: true }}
             variants={{
               hidden: { opacity: 0, y: 20 },
@@ -135,7 +135,7 @@ const Home = () => {
           <motion.li
             initial="hidden"
             whileInView="visible"
-            transition={{ delay: 0.25, duration: 0.5 }}
+            transition={{ delay: 2.25, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
               hidden: { opacity: 0, y: -20 },
@@ -156,7 +156,7 @@ const Home = () => {
           <motion.li
             initial="hidden"
             whileInView="visible"
-            transition={{ delay: 0.5, duration: 0.5 }}
+            transition={{ delay: 2.5, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
               hidden: { opacity: 0, y: -20 },
@@ -177,7 +177,7 @@ const Home = () => {
           <motion.li
             initial="hidden"
             whileInView="visible"
-            transition={{ delay: 0.75, duration: 0.5 }}
+            transition={{ delay:2.75, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
               hidden: { opacity: 0, y: -20 },
@@ -197,7 +197,7 @@ const Home = () => {
           <motion.li
             initial="hidden"
             whileInView="visible"
-            transition={{ delay: 1, duration: 0.5 }}
+            transition={{ delay: 3, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
               hidden: { opacity: 0, y: -20 },
@@ -218,29 +218,29 @@ const Home = () => {
         </ul>
       </div>
 
-      {/* <motion.div
+      <motion.div
         initial="hidden"
         whileInView="visible"
-        transition={{ delay: 1.25, duration: 0.5 }}
+        transition={{ delay: 3.25, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
           hidden: { opacity: 0, y: -20 },
           visible: { opacity: 100, y: 0 },
         }}
-        className="fixed bottom-14 left-5 hidden h-1/4 w-2.5 origin-top bg-gray xl:flex"
+        className="fixed bottom-14 left-5 hidden h-1/4 w-1 origin-top bg-gray xl:flex"
       ></motion.div>
       <motion.div
         initial="hidden"
         whileInView="visible"
-        transition={{ delay: 1.25, duration: 0.5 }}
+        transition={{ delay: 3.25, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
           hidden: { opacity: 0, y: -20 },
           visible: { opacity: 100, y: 0 },
         }}
-        className="fixed bottom-14 left-5 hidden h-1/4 w-2.5 origin-top bg-secondary xl:flex"
+        className="fixed bottom-14 left-5 hidden h-1/4 w-1 origin-top bg-secondary xl:flex"
         style={{ scaleY: scrollYProgress }}
-      ></motion.div> */}
+      ></motion.div>
     </header>
   );
 };

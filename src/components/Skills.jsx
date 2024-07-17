@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Language from "../ui/Language";
 
 import HTML from "../assets/languages/html5-original.svg";
@@ -20,13 +21,33 @@ const Skills = () => {
       className="flex min-h-screen w-full items-center justify-center bg-primary pb-24 xs:pb-36 md:pb-0"
     >
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-white">
-        <h2 className="text-center text-4xl font-bold">
+        <motion.h2
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 100, y: 0 },
+          }}
+          className="text-center text-4xl font-bold"
+        >
           My Technology <span className="text-secondary">Stack</span>
-        </h2>
+        </motion.h2>
 
-        <p className="pb-12 pt-4 text-gray lg:text-lg">
+        <motion.p
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          variants={{
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 100, y: 0 },
+          }}
+          className="pb-12 pt-4 text-gray lg:text-lg"
+        >
           Here are the technologies I've worked with.
-        </p>
+        </motion.p>
 
         <div className="grid w-full grid-cols-2 place-items-center gap-y-8 xs:grid-cols-3 md:grid-cols-4 lg:gap-y-10">
           <Language icon={HTML} name="HTML" />
