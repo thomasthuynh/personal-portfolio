@@ -42,7 +42,7 @@ const Home = () => {
           }}
           className="text-4xl font-semibold text-gray sm:text-5xl lg:text-6xl xl:text-7xl"
         >
-          A Full Stack Developer
+          A Full Stack Developer.
         </motion.h2>
         <motion.p
           initial="hidden"
@@ -53,12 +53,11 @@ const Home = () => {
             hidden: { opacity: 0, x: 50 },
             visible: { opacity: 100, x: 0 },
           }}
-          className="pb-4 pt-6 text-gray lg:text-lg w-full md:w-5/6"
+          className="w-full pb-4 pt-6 text-gray md:w-5/6 lg:text-lg"
         >
-          I specialize in developing (and occasionally
-          designing) responsive web applications. I build and
-          enhance a wide range of projects, utilizing a variety of both
-          front-end and back-end technologies.
+          I specialize in developing (and occasionally designing) responsive web
+          applications. I build and enhance a wide range of projects, utilizing
+          a variety of both front-end and back-end technologies.
         </motion.p>
         <motion.ul
           initial="hidden"
@@ -118,7 +117,7 @@ const Home = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            transition={{ delay: 3.25, duration: 0.75 }}
+            transition={{ delay: 3.75, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
               hidden: { opacity: 0, y: 20 },
@@ -130,12 +129,26 @@ const Home = () => {
         </Link>
       </div>
 
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        transition={{ delay: 2.25, duration: 0.5 }}
+        viewport={{ once: true }}
+        variants={{
+          hidden: { opacity: 0, y: -20, rotate: 90 },
+          visible: { opacity: 100, y: 0, rotate: 90 },
+        }}
+        className="fixed left-4 top-[140px] z-50 origin-bottom-left rotate-90 font-semibold uppercase tracking-widest text-white hidden xl:flex"
+      >
+        <p>Version 1.2</p>
+      </motion.div>
+
       <div className="fixed bottom-1/2 left-0 hidden translate-y-1/2 xl:flex">
         <ul className="flex flex-col font-semibold uppercase text-white">
           <motion.li
             initial="hidden"
             whileInView="visible"
-            transition={{ delay: 2.25, duration: 0.5 }}
+            transition={{ delay: 2.5, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
               hidden: { opacity: 0, y: -20 },
@@ -156,7 +169,7 @@ const Home = () => {
           <motion.li
             initial="hidden"
             whileInView="visible"
-            transition={{ delay: 2.5, duration: 0.5 }}
+            transition={{ delay: 2.75, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
               hidden: { opacity: 0, y: -20 },
@@ -177,7 +190,7 @@ const Home = () => {
           <motion.li
             initial="hidden"
             whileInView="visible"
-            transition={{ delay:2.75, duration: 0.5 }}
+            transition={{ delay: 3, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
               hidden: { opacity: 0, y: -20 },
@@ -197,7 +210,7 @@ const Home = () => {
           <motion.li
             initial="hidden"
             whileInView="visible"
-            transition={{ delay: 3, duration: 0.5 }}
+            transition={{ delay: 3.25, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
               hidden: { opacity: 0, y: -20 },
@@ -221,7 +234,7 @@ const Home = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        transition={{ delay: 3.25, duration: 0.5 }}
+        transition={{ delay: 3.5, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
           hidden: { opacity: 0, y: -20 },
@@ -232,7 +245,7 @@ const Home = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        transition={{ delay: 3.25, duration: 0.5 }}
+        transition={{ delay: 3.5, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
           hidden: { opacity: 0, y: -20 },
