@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 import Logo from "../assets/Logo.png";
 import { FaBars } from "react-icons/fa";
@@ -9,7 +10,17 @@ const Nav = () => {
   const [hamburgerToggled, setHamburgerToggled] = useState(false);
 
   return (
-    <nav className="fixed left-0 top-0 z-10 mx-auto w-full bg-primary text-white">
+    <motion.nav
+      initial="hidden"
+      whileInView="visible"
+      transition={{ delay: 1.25, duration: 0.75 }}
+      viewport={{ once: true }}
+      variants={{
+        hidden: { opacity: 0, y: -20 },
+        visible: { opacity: 100, y: 0 },
+      }}
+      className="fixed left-0 top-0 z-10 mx-auto w-full bg-primary text-white"
+    >
       <div className="mx-auto flex w-[90%] max-w-[2560px] items-center justify-between py-4">
         {/* LOGO */}
         <div>
@@ -19,22 +30,22 @@ const Nav = () => {
         {/* MENU */}
         <div className="hidden md:flex">
           <ul className="flex items-center gap-12 font-semibold uppercase tracking-wider">
-            <li className="duration-150 hover:opacity-80">
+            <li className="duration-150 hover:text-secondary">
               <Link to="home" smooth={true} duration={500}>
                 Home
               </Link>
             </li>
-            <li className="duration-150 hover:opacity-80">
+            <li className="duration-150 hover:text-secondary">
               <Link to="about" smooth={true} duration={500}>
                 About
               </Link>
             </li>
-            <li className="duration-150 hover:opacity-80">
+            <li className="duration-150 hover:text-secondary">
               <Link to="skills" smooth={true} duration={500}>
                 Skills
               </Link>
             </li>
-            <li className="duration-150 hover:opacity-80">
+            <li className="duration-150 hover:text-secondary">
               <Link to="projects" smooth={true} duration={500} offset={-100}>
                 Projects
               </Link>
@@ -124,7 +135,7 @@ const Nav = () => {
           </ul>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

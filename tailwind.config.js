@@ -1,3 +1,5 @@
+import { transform } from "framer-motion";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -11,20 +13,20 @@ export default {
       },
       keyframes: {
         wave: {
-          "0%": {transform: "rotate(0deg)"},
-          "50%": {transform: "rotate(30deg)"},
-          "100%": {transform: "rotate(0deg)"}
+          "0%": { transform: "rotate(0deg)" },
+          "50%": { transform: "rotate(30deg)" },
+          "100%": { transform: "rotate(0deg)" },
         },
         scroll: {
-          "0%": {transform: "translateY(0)"},
-          "50%": {transform: "translateY(8px)"},
-          "100%": {transform: "translateY(0)"},
-        }
+          "0%": { transform: "translateY(0) translateX(-50%)" },
+          "50%": { transform: "translateY(8px) translateX(-50%)" },
+          "100%": { transform: "translateY(0) translateX(-50%)" },
+        },
       },
       animation: {
         wave: "wave 750ms ease infinite",
-        scroll: "scroll 1000ms ease infinite"
-      }
+        scroll: "scroll 1000ms ease infinite",
+      },
     },
     screens: {
       xs: "480px",

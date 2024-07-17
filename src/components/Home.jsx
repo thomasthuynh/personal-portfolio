@@ -1,22 +1,24 @@
 import { Link } from "react-scroll";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill, BsMouse } from "react-icons/bs";
 
 const Home = () => {
+  const { scrollYProgress } = useScroll();
+
   return (
     <header name="home" className="relative h-screen w-full bg-primary">
-      <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-center">
+      <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col justify-center">
         <motion.div
           initial="hidden"
           whileInView="visible"
           transition={{ delay: 0.25, duration: 1 }}
           viewport={{ once: true }}
           variants={{
-            hidden: { opacity: 0, y: -100 },
-            visible: { opacity: 100, y: 0 },
+            hidden: { opacity: 0, x: 100 },
+            visible: { opacity: 100, x: 0 },
           }}
         >
           <p className="font-semibold text-white lg:text-lg">
@@ -26,10 +28,7 @@ const Home = () => {
             </span>
           </p>
           <h1 className="py-2 text-4xl font-bold text-white sm:text-5xl lg:text-6xl xl:text-7xl">
-            I'm{" "}
-            <span className="text-secondary">
-              Thomas
-            </span>
+            I'm <span className="text-secondary">Thomas</span>
           </h1>
         </motion.div>
         <motion.h2
@@ -38,8 +37,8 @@ const Home = () => {
           transition={{ delay: 0.5, duration: 0.75 }}
           viewport={{ once: true }}
           variants={{
-            hidden: { opacity: 0, y: -75 },
-            visible: { opacity: 100, y: 0 },
+            hidden: { opacity: 0, x: 75 },
+            visible: { opacity: 100, x: 0 },
           }}
           className="text-4xl font-bold text-gray sm:text-5xl lg:text-6xl xl:text-7xl"
         >
@@ -51,17 +50,13 @@ const Home = () => {
           transition={{ delay: 0.75, duration: 0.75 }}
           viewport={{ once: true }}
           variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 100, y: 0 },
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 100, x: 0 },
           }}
-          className="pb-4 pt-6 text-gray lg:text-lg"
+          className="pb-4 pt-6 text-gray lg:text-lg w-full md:w-4/5"
         >
-          {/* I'm a front-end developer specializing in building responsive and
-          interactive web applications. Currently, I'm focused on building a
-          variety of front-end based projects while learning back-end
-          technologies. */}
-          I'm a full-stack developer specializing in creating (and occasionally
-          designing) responsive and engaging web applications. I build and
+          I specialize in developing (and occasionally
+          designing) responsive web applications. I build and
           enhance a wide range of projects, utilizing a variety of both
           front-end and back-end technologies.
         </motion.p>
@@ -113,19 +108,40 @@ const Home = () => {
             </a>
           </li>
         </motion.ul>
+
         <Link
           to="about"
           smooth={true}
           duration={500}
-          className="absolute bottom-8 animate-scroll text-white duration-300 hover:text-secondary"
+          className="absolute bottom-8 left-1/2 block animate-scroll text-white hover:text-secondary"
         >
-          <BsMouse size={30} />
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            transition={{ delay: 1.25, duration: 0.75 }}
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 100, y: 0 },
+            }}
+          >
+            <BsMouse size={30} />
+          </motion.div>
         </Link>
       </div>
 
       <div className="fixed bottom-1/2 left-0 hidden translate-y-1/2 xl:flex">
         <ul className="flex flex-col font-semibold uppercase text-white">
-          <li>
+          <motion.li
+            initial="hidden"
+            whileInView="visible"
+            transition={{ delay: 0.25, duration: 0.5 }}
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0, y: -20 },
+              visible: { opacity: 100, y: 0 },
+            }}
+          >
             <a
               href="https://www.linkedin.com/in/thomasthuynh/"
               target="_blank"
@@ -136,8 +152,17 @@ const Home = () => {
                 <FaLinkedinIn size={25} />
               </span>
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial="hidden"
+            whileInView="visible"
+            transition={{ delay: 0.5, duration: 0.5 }}
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0, y: -20 },
+              visible: { opacity: 100, y: 0 },
+            }}
+          >
             <a
               href="https://github.com/thomasthuynh"
               target="_blank"
@@ -148,8 +173,17 @@ const Home = () => {
                 <FaGithub size={25} />
               </span>
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial="hidden"
+            whileInView="visible"
+            transition={{ delay: 0.75, duration: 0.5 }}
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0, y: -20 },
+              visible: { opacity: 100, y: 0 },
+            }}
+          >
             <a
               href="mailto:thomas_tth@live.com"
               className="flex translate-x-[-95px] items-center justify-between p-4 tracking-wider text-white duration-300 hover:translate-x-0 hover:text-secondary"
@@ -159,8 +193,17 @@ const Home = () => {
                 <HiOutlineMail size={25} />
               </span>
             </a>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial="hidden"
+            whileInView="visible"
+            transition={{ delay: 1, duration: 0.5 }}
+            viewport={{ once: true }}
+            variants={{
+              hidden: { opacity: 0, y: -20 },
+              visible: { opacity: 100, y: 0 },
+            }}
+          >
             <a
               href="/thomas-huynh-resume.pdf"
               target="_blank"
@@ -171,9 +214,33 @@ const Home = () => {
                 <BsFillPersonLinesFill size={25} />
               </span>
             </a>
-          </li>
+          </motion.li>
         </ul>
       </div>
+
+      {/* <motion.div
+        initial="hidden"
+        whileInView="visible"
+        transition={{ delay: 1.25, duration: 0.5 }}
+        viewport={{ once: true }}
+        variants={{
+          hidden: { opacity: 0, y: -20 },
+          visible: { opacity: 100, y: 0 },
+        }}
+        className="fixed bottom-14 left-5 hidden h-1/4 w-2.5 origin-top bg-gray xl:flex"
+      ></motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        transition={{ delay: 1.25, duration: 0.5 }}
+        viewport={{ once: true }}
+        variants={{
+          hidden: { opacity: 0, y: -20 },
+          visible: { opacity: 100, y: 0 },
+        }}
+        className="fixed bottom-14 left-5 hidden h-1/4 w-2.5 origin-top bg-secondary xl:flex"
+        style={{ scaleY: scrollYProgress }}
+      ></motion.div> */}
     </header>
   );
 };
