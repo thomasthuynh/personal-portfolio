@@ -53,7 +53,7 @@ const Home = () => {
             hidden: { opacity: 0, x: 50 },
             visible: { opacity: 100, x: 0 },
           }}
-          className="w-full pb-4 pt-6 text-gray md:w-5/6 lg:text-lg"
+          className="w-full pb-4 pt-6 text-gray md:w-4/5 lg:text-lg"
         >
           I specialize in developing (and occasionally designing) responsive web
           applications. I build and enhance a wide range of projects, utilizing

@@ -19,7 +19,7 @@ const Nav = () => {
         hidden: { opacity: 0, y: -20 },
         visible: { opacity: 100, y: 0 },
       }}
-      className="fixed left-0 top-0 z-10 mx-auto w-full bg-primary text-white"
+      className="fixed left-0 top-0 z-20 mx-auto w-full bg-primary text-white"
     >
       <div className="mx-auto flex w-[90%] max-w-[2560px] items-center justify-between py-4">
         {/* LOGO */}
@@ -30,34 +30,154 @@ const Nav = () => {
         {/* MENU */}
         <div className="hidden md:flex">
           <ul className="flex items-center gap-12 font-semibold uppercase tracking-wider">
-            <li className="duration-150 hover:text-secondary">
+            {/* HOME LINK */}
+            <li>
               <Link to="home" smooth={true} duration={500}>
-                Home
+                <motion.div
+                  initial="initial"
+                  whileHover="whileHover"
+                  className="relative overflow-hidden"
+                >
+                  <motion.p
+                    transition={{ duration: 0.25 }}
+                    variants={{
+                      initial: { y: 0, opacity: 1 },
+                      whileHover: { y: "-100%" },
+                    }}
+                  >
+                    Home
+                  </motion.p>
+                  <motion.p
+                    transition={{ duration: 0.25 }}
+                    variants={{
+                      initial: { y: "100%", opacity: 1 },
+                      whileHover: { y: 0 },
+                    }}
+                    className="absolute inset-0 text-secondary"
+                  >
+                    Home
+                  </motion.p>
+                </motion.div>
               </Link>
             </li>
-            <li className="duration-150 hover:text-secondary">
+            {/* ABOUT LINK */}
+            <li>
               <Link to="about" smooth={true} duration={500}>
-                About
+                <motion.div
+                  initial="initial"
+                  whileHover="whileHover"
+                  className="relative overflow-hidden"
+                >
+                  <motion.p
+                    transition={{ duration: 0.25 }}
+                    variants={{
+                      initial: { y: 0, opacity: 1 },
+                      whileHover: { y: "-100%" },
+                    }}
+                  >
+                    About
+                  </motion.p>
+                  <motion.p
+                    transition={{ duration: 0.25 }}
+                    variants={{
+                      initial: { y: "100%", opacity: 1 },
+                      whileHover: { y: 0 },
+                    }}
+                    className="absolute inset-0 text-secondary"
+                  >
+                    About
+                  </motion.p>
+                </motion.div>
               </Link>
             </li>
-            <li className="duration-150 hover:text-secondary">
+            {/* SKILLS LINK */}
+            <li>
               <Link to="skills" smooth={true} duration={500}>
-                Skills
+                <motion.div
+                  initial="initial"
+                  whileHover="whileHover"
+                  className="relative overflow-hidden"
+                >
+                  <motion.p
+                    transition={{ duration: 0.25 }}
+                    variants={{
+                      initial: { y: 0, opacity: 1 },
+                      whileHover: { y: "-100%" },
+                    }}
+                  >
+                    Skills
+                  </motion.p>
+                  <motion.p
+                    transition={{ duration: 0.25 }}
+                    variants={{
+                      initial: { y: "100%", opacity: 1 },
+                      whileHover: { y: 0 },
+                    }}
+                    className="absolute inset-0 text-secondary"
+                  >
+                    Skills
+                  </motion.p>
+                </motion.div>
               </Link>
             </li>
-            <li className="duration-150 hover:text-secondary">
+            {/* PROJECTS LINK */}
+            <li>
               <Link to="projects" smooth={true} duration={500} offset={-100}>
-                Projects
+                <motion.div
+                  initial="initial"
+                  whileHover="whileHover"
+                  className="relative overflow-hidden"
+                >
+                  <motion.p
+                    transition={{ duration: 0.25 }}
+                    variants={{
+                      initial: { y: 0, opacity: 1 },
+                      whileHover: { y: "-100%" },
+                    }}
+                  >
+                    Projects
+                  </motion.p>
+                  <motion.p
+                    transition={{ duration: 0.25 }}
+                    variants={{
+                      initial: { y: "100%", opacity: 1 },
+                      whileHover: { y: 0 },
+                    }}
+                    className="absolute inset-0 text-secondary"
+                  >
+                    Projects
+                  </motion.p>
+                </motion.div>
               </Link>
             </li>
-            <li className="duration-150 hover:opacity-80">
-              <Link
-                to="contact"
-                smooth={true}
-                duration={500}
-                className="rounded bg-secondary p-4"
-              >
-                Contact
+            {/* CONTACT LINK */}
+            <li>
+              <Link to="contact" smooth={true} duration={500}>
+                <motion.div
+                  initial="initial"
+                  whileHover="whileHover"
+                  className="relative overflow-hidden"
+                >
+                  <motion.p
+                    transition={{ duration: 0.25 }}
+                    variants={{
+                      initial: { y: 0, opacity: 1 },
+                      whileHover: { y: "-100%" },
+                    }}
+                  >
+                    Contact
+                  </motion.p>
+                  <motion.p
+                    transition={{ duration: 0.25 }}
+                    variants={{
+                      initial: { y: "100%", opacity: 1 },
+                      whileHover: { y: 0 },
+                    }}
+                    className="absolute inset-0 text-secondary"
+                  >
+                    Contact
+                  </motion.p>
+                </motion.div>
               </Link>
             </li>
           </ul>

@@ -13,7 +13,7 @@ const Preloader = () => {
         <motion.div
           initial="initial"
           animate="animate"
-          className="relative mb-2 overflow-hidden text-4xl font-bold uppercase tracking-wide text-secondary"
+          className="relative mb-2 overflow-hidden font-semibold tracking-wide text-secondary"
         >
           <motion.h1
             transition={{ duration: 0.5 }}
@@ -21,6 +21,7 @@ const Preloader = () => {
               initial: { y: 0, opacity: 0 },
               animate: { y: "-100%" },
             }}
+            className="text-3xl sm:text-4xl lg:text-5xl"
           >
             Thomas Huynh
           </motion.h1>
@@ -30,7 +31,7 @@ const Preloader = () => {
               initial: { y: "100%" },
               animate: { y: "0" },
             }}
-            className="absolute inset-0"
+            className="absolute inset-0 text-3xl sm:text-4xl lg:text-5xl"
           >
             Thomas Huynh
           </motion.h1>
@@ -40,7 +41,7 @@ const Preloader = () => {
         <motion.div
           initial="initial"
           animate="animate"
-          className="relative overflow-hidden text-4xl font-bold uppercase tracking-wide text-gray"
+          className="relative overflow-hidden font-semibold tracking-wide text-gray"
         >
           <motion.h1
             transition={{ delay: 0.25, duration: 0.5 }}
@@ -48,6 +49,7 @@ const Preloader = () => {
               initial: { y: 0, opacity: 0 },
               animate: { y: "-100%" },
             }}
+            className="text-3xl sm:text-4xl lg:text-5xl"
           >
             Portfolio
           </motion.h1>
@@ -57,7 +59,7 @@ const Preloader = () => {
               initial: { y: "100%" },
               animate: { y: "0" },
             }}
-            className="absolute inset-0"
+            className="absolute inset-0 text-3xl sm:text-4xl lg:text-5xl"
           >
             Portfolio
           </motion.h1>
@@ -71,7 +73,7 @@ const Preloader = () => {
         transition={{ delay: 0.75 }}
         className="absolute bottom-6 left-6"
       >
-        <p className="flex items-center text-xl font-semibold uppercase tracking-widest text-white">
+        <p className="flex items-center font-semibold uppercase tracking-widest text-white">
           <motion.span
             initial={{ opacity: 1 }}
             animate={{ opacity: [1, 0, 1, 0] }}
