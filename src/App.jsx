@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import Nav from "./components/Nav";
 import Home from "./components/Home";
@@ -9,23 +9,30 @@ import Contact from "./components/Contact";
 import Preloader from "./components/Preloader";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
     setTimeout(() => {
       document.body.style.overflow = "auto";
-    }, 2000);
+      setLoading(false);
+    }, 2250);
   }, []);
 
   return (
     <div className="mx-auto max-w-[2560px] overflow-hidden">
-      <Preloader />
-      <Nav />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      {loading && <Preloader />}
+      {!loading && (
+        <>
+          <Nav />
+          <Home />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </>
+      )}
     </div>
   );
 }

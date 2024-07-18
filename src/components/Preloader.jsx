@@ -82,7 +82,7 @@ const Preloader = () => {
               duration: 3,
               times: [0, 0.33, 0.67, 1],
             }}
-            className="shadow-spread-secondary animate-flash mr-3 flex h-2 w-2 rounded-full bg-secondary"
+            className="animate-flash mr-3 flex h-2 w-2 rounded-full bg-secondary shadow-spread-secondary"
           ></motion.span>
           Loading V1.2...
         </p>
