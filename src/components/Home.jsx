@@ -135,8 +135,8 @@ const Home = () => {
         transition={{ delay: 0, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
-          hidden: { opacity: 0, y: -20, rotate: 90 },
-          visible: { opacity: 100, y: 0, rotate: 90 },
+          hidden: { opacity: 0, rotate: 90 },
+          visible: { opacity: 100, rotate: 90 },
         }}
         className="fixed left-4 top-[140px] hidden origin-bottom-left rotate-90 font-semibold uppercase tracking-widest text-white xl:flex"
       >
@@ -237,10 +237,16 @@ const Home = () => {
         transition={{ delay: 1.25, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
-          hidden: { opacity: 0, y: -20 },
-          visible: { opacity: 100, y: 0 },
+          hidden: {
+            opacity: 0,
+            scaleY: 0,
+          },
+          visible: {
+            opacity: 100,
+            scaleY: 1,
+          },
         }}
-        className="fixed bottom-14 left-5 hidden h-1/4 w-1 origin-top bg-gray xl:flex"
+        className="fixed bottom-14 left-5 hidden h-1/4 w-1 origin-center bg-gray xl:flex"
       ></motion.div>
       <motion.div
         initial="hidden"
