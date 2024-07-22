@@ -22,8 +22,8 @@ function App() {
 
   return (
     <div className="mx-auto max-w-[2560px] overflow-hidden">
-      {/* {loading && <Preloader />}
-      {!loading && ( */}
+      {loading && <Preloader />}
+      {!loading && (
         <>
           <Nav />
           <Home />
