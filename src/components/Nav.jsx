@@ -19,7 +19,7 @@ const Nav = () => {
         hidden: { opacity: 0, y: -20 },
         visible: { opacity: 100, y: 0 },
       }}
-      className="fixed left-0 top-0 z-20 mx-auto w-full bg-primary text-white"
+      className="fixed left-0 top-0 z-20 mx-auto w-full bg-primary text-white h-[83px]"
     >
       <div className="mx-auto flex w-[90%] max-w-[2560px] items-center justify-between py-4">
         {/* LOGO */}
@@ -188,7 +188,7 @@ const Nav = () => {
           onClick={() => setHamburgerToggled(!hamburgerToggled)}
           className="z-10 cursor-pointer md:hidden"
         >
-          {hamburgerToggled ? <FaXmark size={20} /> : <FaBars size={20} />}
+          {hamburgerToggled ? <FaXmark size={30} /> : <FaBars size={30} />}
         </div>
       </div>
 
@@ -199,7 +199,7 @@ const Nav = () => {
         } absolute top-0 h-screen w-full bg-primary duration-300`}
       >
         <div className="flex h-full w-full items-center justify-center">
-          <ul className="flex h-1/2 flex-col items-center justify-center gap-12 text-2xl font-semibold uppercase tracking-wider">
+          <ul className="flex h-1/2 w-3/4 flex-col justify-center gap-4 text-2xl font-semibold uppercase tracking-wider text-left -translate-y-1/4">
             <li>
               <Link
                 to="home"

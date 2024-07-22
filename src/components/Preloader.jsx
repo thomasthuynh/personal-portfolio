@@ -73,7 +73,7 @@ const Preloader = () => {
         transition={{ delay: 0.75 }}
         className="absolute bottom-6 left-6"
       >
-        <p className="flex items-center font-semibold uppercase tracking-widest text-white text-sm md:text-md">
+        <p className="flex items-center font-semibold uppercase tracking-widest text-white text-xs md:text-base">
           <motion.span
             initial={{ opacity: 1 }}
             animate={{ opacity: [1, 0, 1, 0] }}

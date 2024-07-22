@@ -34,7 +34,7 @@ const Home = () => {
   return (
     <header name="home" className="relative h-screen w-full bg-primary">
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col justify-center">
-        <motion.div className="relative overflow-hidden font-semibold text-white lg:text-xl">
+        <motion.div className="relative overflow-hidden font-medium text-white lg:text-xl">
           <motion.p
             initial="initial"
             animate="animate"
@@ -45,7 +45,7 @@ const Home = () => {
           </motion.p>
         </motion.div>
 
-        <div className="flex py-2 text-4xl font-semibold sm:text-5xl lg:text-6xl xl:text-7xl -mb-2 xs:mb-0">
+        <div className="-mb-2 flex py-2 text-4xl font-medium xs:mb-0 sm:text-5xl lg:text-6xl xl:text-7xl">
           <div className="relative flex overflow-hidden">
             <Title color={"text-white"} delay={0.5}>
               I'm&nbsp;
@@ -57,13 +57,13 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col xs:flex-row">
-          <div className="relative overflow-hidden py-2 text-4xl font-semibold sm:text-5xl lg:text-6xl xl:text-7xl -mb-4 xs:mb-0">
+          <div className="relative -mb-4 overflow-hidden py-2 text-4xl font-medium xs:mb-0 sm:text-5xl lg:text-6xl xl:text-7xl">
             <Title color={"text-white"} delay={0.65}>
               A Full Stack&nbsp;
             </Title>
           </div>
 
-          <div className="relative overflow-hidden py-2 text-4xl font-semibold sm:text-5xl lg:text-6xl xl:text-7xl">
+          <div className="relative overflow-hidden py-2 text-4xl font-medium sm:text-5xl lg:text-6xl xl:text-7xl">
             <Title color={"text-white"} delay={0.95}>
               Developer.
             </Title>
@@ -76,7 +76,6 @@ const Home = () => {
             animate="animate"
             transition={{ delay: 1.25, duration: 0.5 }}
             variants={{ initial: { y: "100%" }, animate: { y: 0 } }}
-            // variants={{ initial: { opacity: 0 }, animate: { opacity: 1 } }}
             className="w-full py-4 text-gray md:w-4/5 lg:text-lg"
           >
             I specialize in developing (and occasionally designing) responsive
@@ -85,14 +84,15 @@ const Home = () => {
           </motion.p>
         </motion.div>
 
+        {/* MOBILE LINKS */}
         <motion.ul
           initial="hidden"
-          whileInView="visible"
+          animate="animate"
           transition={{ delay: 1.75, duration: 0.5 }}
           viewport={{ once: true }}
           variants={{
             hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 100, y: 0 },
+            animate: { opacity: 100, y: 0 },
           }}
           className="flex gap-2 pb-4 text-white xl:hidden"
         >
@@ -134,25 +134,23 @@ const Home = () => {
           </li>
         </motion.ul>
 
-        {/* <Link
-          to="about"
-          smooth={true}
-          duration={500}
-          className="absolute bottom-8 left-1/2 block animate-scroll text-white hover:text-secondary"
-        >
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            transition={{ delay: 1.5, duration: 0.5 }}
-            viewport={{ once: true }}
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 100, y: 0 },
-            }}
-          >
-            <BsMouse size={30} />
-          </motion.div>
-        </Link> */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          transition={{ delay: 1.25, duration: 0.5 }}
+          viewport={{ once: true }}
+          variants={{
+            hidden: {
+              opacity: 0,
+              scaleY: 0,
+            },
+            visible: {
+              opacity: 100,
+              scaleY: 1,
+            },
+          }}
+          className="fixed bottom-14 left-5 hidden h-1/4 w-1 origin-center bg-gray xl:flex"
+        ></motion.div>
       </div>
 
       <motion.div
@@ -286,6 +284,30 @@ const Home = () => {
         className="fixed bottom-14 left-5 hidden h-1/4 w-1 origin-top bg-secondary xl:flex"
         style={{ scaleY: scrollYProgress }}
       ></motion.div>
+
+      {/* MOBILE SCROLL */}
+
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        transition={{ delay: 1.75, duration: 0.5 }}
+        viewport={{ once: true }}
+        variants={{
+          hidden: {
+            opacity: 0,
+          },
+          visible: {
+            opacity: 100,
+          },
+        }}
+        className="absolute bottom-20 right-0 flex flex-col items-center"
+      >
+        <p className="flex h-1/6 origin-center -rotate-90 text-sm font-semibold uppercase text-gray xl:hidden">
+          Scroll
+        </p>
+
+        <div className="mt-8 flex h-12 w-0.5 animate-scroll bg-gray xl:hidden"></div>
+      </motion.div>
     </header>
   );
 };

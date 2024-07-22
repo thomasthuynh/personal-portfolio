@@ -18,14 +18,15 @@ export default {
           "100%": { transform: "rotate(0deg)" },
         },
         scroll: {
-          "0%": { transform: "translateY(0) translateX(-50%)" },
-          "50%": { transform: "translateY(8px) translateX(-50%)" },
-          "100%": { transform: "translateY(0) translateX(-50%)" },
+          "0%": { transform: "scaleY(0)", "transform-origin": "top" },
+          "50%": { transform: "scaleY(1)", "transform-origin": "top" },
+          "55%": { transform: "scaleY(1)", "transform-origin": "bottom" },
+          "100%": { transform: "scaleY(0)", "transform-origin": "bottom" },
         },
       },
       animation: {
         wave: "wave 750ms ease infinite",
-        scroll: "scroll 1000ms ease infinite",
+        scroll: "scroll 1500ms ease infinite",
       },
       boxShadow: {
         "spread-secondary": "0 0 2px 2px rgba(56, 189, 248, 1)",
