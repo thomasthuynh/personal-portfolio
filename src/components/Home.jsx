@@ -300,7 +300,7 @@ const Home = () => {
             opacity: 100,
           },
         }}
-        className="absolute bottom-[10%] right-0 flex flex-col items-center"
+        className="absolute bottom-[12.5%] right-0 flex flex-col items-center"
       >
         <p className="flex h-1/6 origin-center -rotate-90 text-sm font-semibold uppercase text-gray xl:hidden">
           Scroll
