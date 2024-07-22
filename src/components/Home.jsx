@@ -5,67 +5,93 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill, BsMouse } from "react-icons/bs";
 
+const Title = ({ children, color, delay }) => {
+  return (
+    <motion.h1
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: delay }}
+    >
+      {children.split("").map((l, i) => (
+        <motion.span
+          key={i}
+          initial="initial"
+          animate="animate"
+          transition={{ delay: delay + 0.025 * i, duration: 0.5 }}
+          variants={{ initial: { y: "100%" }, animate: { y: 0 } }}
+          className={`inline-block ${color}`}
+        >
+          {l === " " ? "\u00A0" : l}
+        </motion.span>
+      ))}
+    </motion.h1>
+  );
+};
+
 const Home = () => {
   const { scrollYProgress } = useScroll();
 
   return (
     <header name="home" className="relative h-screen w-full bg-primary">
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col justify-center">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          transition={{ delay: 0, duration: 1 }}
-          viewport={{ once: true }}
-          variants={{
-            hidden: { opacity: 0, x: 100 },
-            visible: { opacity: 100, x: 0 },
-          }}
-        >
-          <p className="font-semibold text-white lg:text-lg">
-            Hi, nice to meet you{" "}
-            <span className="inline-block animate-wave text-xl lg:text-2xl">
-              👋
-            </span>
-          </p>
-          <h1 className="py-2 text-4xl font-semibold text-white sm:text-5xl lg:text-6xl xl:text-7xl">
-            I'm <span className="text-secondary">Thomas.</span>
-          </h1>
+        <motion.div className="relative overflow-hidden font-semibold text-white lg:text-xl">
+          <motion.p
+            initial="initial"
+            animate="animate"
+            transition={{ duration: 0.5 }}
+            variants={{ initial: { y: "100%" }, animate: { y: 0 } }}
+          >
+            Hey, nice to meet you.
+          </motion.p>
         </motion.div>
-        <motion.h2
-          initial="hidden"
-          whileInView="visible"
-          transition={{ delay: 0.25, duration: 0.75 }}
-          viewport={{ once: true }}
-          variants={{
-            hidden: { opacity: 0, x: 75 },
-            visible: { opacity: 100, x: 0 },
-          }}
-          className="text-4xl font-semibold text-gray sm:text-5xl lg:text-6xl xl:text-7xl"
-        >
-          A Full Stack Developer.
-        </motion.h2>
-        <motion.p
-          initial="hidden"
-          whileInView="visible"
-          transition={{ delay: 0.5, duration: 0.75 }}
-          viewport={{ once: true }}
-          variants={{
-            hidden: { opacity: 0, x: 50 },
-            visible: { opacity: 100, x: 0 },
-          }}
-          className="w-full pb-4 pt-6 text-gray md:w-4/5 lg:text-lg"
-        >
-          I specialize in developing (and occasionally designing) responsive web
-          applications. I build and enhance a wide range of projects, utilizing
-          a variety of both front-end and back-end technologies.
-        </motion.p>
+
+        <div className="flex py-2 text-4xl font-semibold sm:text-5xl lg:text-6xl xl:text-7xl -mb-2 xs:mb-0">
+          <div className="relative flex overflow-hidden">
+            <Title color={"text-white"} delay={0.5}>
+              I'm&nbsp;
+            </Title>
+            <Title color={"text-secondary"} delay={0.5}>
+              Thomas.
+            </Title>
+          </div>
+        </div>
+
+        <div className="flex flex-col xs:flex-row">
+          <div className="relative overflow-hidden py-2 text-4xl font-semibold sm:text-5xl lg:text-6xl xl:text-7xl -mb-4 xs:mb-0">
+            <Title color={"text-white"} delay={0.65}>
+              A Full Stack&nbsp;
+            </Title>
+          </div>
+
+          <div className="relative overflow-hidden py-2 text-4xl font-semibold sm:text-5xl lg:text-6xl xl:text-7xl">
+            <Title color={"text-white"} delay={0.95}>
+              Developer.
+            </Title>
+          </div>
+        </div>
+
+        <motion.div className="relative overflow-hidden">
+          <motion.p
+            initial="initial"
+            animate="animate"
+            transition={{ delay: 1.25, duration: 0.5 }}
+            variants={{ initial: { y: "100%" }, animate: { y: 0 } }}
+            // variants={{ initial: { opacity: 0 }, animate: { opacity: 1 } }}
+            className="w-full py-4 text-gray md:w-4/5 lg:text-lg"
+          >
+            I specialize in developing (and occasionally designing) responsive
+            web applications. I build and enhance a wide range of projects,
+            utilizing a variety of both front-end and back-end technologies.
+          </motion.p>
+        </motion.div>
+
         <motion.ul
           initial="hidden"
           whileInView="visible"
-          transition={{ delay: 0.75, duration: 0.75 }}
+          transition={{ delay: 1.75, duration: 0.5 }}
           viewport={{ once: true }}
           variants={{
-            hidden: { opacity: 0, y: 50 },
+            hidden: { opacity: 0, y: 20 },
             visible: { opacity: 100, y: 0 },
           }}
           className="flex gap-2 pb-4 text-white xl:hidden"
@@ -74,7 +100,7 @@ const Home = () => {
             <a
               href="https://www.linkedin.com/in/thomasthuynh/"
               target="_blank"
-              className="flex p-2 duration-150 hover:scale-110 hover:text-secondary"
+              className="flex p-2 pl-0 duration-150 hover:scale-110 hover:text-secondary"
             >
               <FaLinkedinIn size={20} />
             </a>
@@ -108,7 +134,7 @@ const Home = () => {
           </li>
         </motion.ul>
 
-        <Link
+        {/* <Link
           to="about"
           smooth={true}
           duration={500}
@@ -126,7 +152,7 @@ const Home = () => {
           >
             <BsMouse size={30} />
           </motion.div>
-        </Link>
+        </Link> */}
       </div>
 
       <motion.div
