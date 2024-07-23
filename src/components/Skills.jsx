@@ -13,6 +13,8 @@ import Node from "../assets/languages/nodejs-original.svg";
 import MongoDB from "../assets/languages/mongodb-original.svg";
 import SQL from "../assets/languages/sqldeveloper-original.svg";
 import Python from "../assets/languages/python-original.svg";
+import Figma from "../assets/languages/figma-original.svg";
+import FramerMotion from "../assets/languages/framermotion-original.svg";
 
 const Skills = () => {
   return (
@@ -39,7 +41,7 @@ const Skills = () => {
           Here are the technologies I work with.
         </p>
 
-        <div className="grid w-full grid-cols-2 place-items-center gap-y-8 xs:grid-cols-3 md:grid-cols-4 lg:gap-y-10">
+        <div className="grid w-[90%] grid-cols-2 place-items-center gap-y-8 xs:grid-cols-3 md:grid-cols-4 lg:gap-y-10">
           <Language icon={HTML} name="HTML" />
           <Language icon={CSS} name="CSS" />
           <Language icon={JavaScript} name="JavaScript" />
@@ -48,10 +50,8 @@ const Skills = () => {
           <Language icon={Firebase} name="Firebase" />
           <Language icon={Tailwind} name="Tailwind" />
           <Language icon={SASS} name="SASS" />
-          <Language icon={Node} name="Node JS" />
-          <Language icon={MongoDB} name="MongoDB" />
-          <Language icon={SQL} name="SQL" />
-          <Language icon={Python} name="Python" />
+          {/* <Language icon={Figma} name="Figma" />
+          <Language icon={FramerMotion} name="Framer Motion" /> */}
         </div>
       </div>
     </section>
