@@ -55,9 +55,14 @@ const Projects = () => {
             languages={[
               { name: "React", icon: React },
               {
+                name: "JavaScript",
+                icon: JavaScript,
+              },
+              {
                 name: "Firebase",
                 icon: Firebase,
               },
+
               {
                 name: "Tailwind",
                 icon: Tailwind,
