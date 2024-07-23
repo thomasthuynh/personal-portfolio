@@ -12,7 +12,7 @@ const Nav = () => {
   return (
     <motion.nav
       initial="hidden"
-      whileInView="visible"
+      animate="visible"
       transition={{ delay: 1.75, duration: 0.5 }}
       viewport={{ once: true }}
       variants={{

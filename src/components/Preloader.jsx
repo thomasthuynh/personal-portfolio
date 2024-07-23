@@ -41,7 +41,7 @@ const Preloader = () => {
         <motion.div
           initial="initial"
           animate="animate"
-          className="relative overflow-hidden font-semibold tracking-wide text-gray"
+          className="relative overflow-hidden font-semibold tracking-wide text-white"
         >
           <motion.h1
             transition={{ delay: 0.25, duration: 0.5 }}

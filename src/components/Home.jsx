@@ -136,7 +136,7 @@ const Home = () => {
 
         <motion.div
           initial="hidden"
-          whileInView="visible"
+          animate="visible"
           transition={{ delay: 1.25, duration: 0.5 }}
           viewport={{ once: true }}
           variants={{
@@ -155,7 +155,7 @@ const Home = () => {
 
       <motion.div
         initial="hidden"
-        whileInView="visible"
+        animate="visible"
         transition={{ delay: 0, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
@@ -171,7 +171,7 @@ const Home = () => {
         <ul className="flex flex-col font-semibold uppercase text-white">
           <motion.li
             initial="hidden"
-            whileInView="visible"
+            animate="visible"
             transition={{ delay: 0.25, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
@@ -192,7 +192,7 @@ const Home = () => {
           </motion.li>
           <motion.li
             initial="hidden"
-            whileInView="visible"
+            animate="visible"
             transition={{ delay: 0.5, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
@@ -213,7 +213,7 @@ const Home = () => {
           </motion.li>
           <motion.li
             initial="hidden"
-            whileInView="visible"
+            animate="visible"
             transition={{ delay: 0.75, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
@@ -233,7 +233,7 @@ const Home = () => {
           </motion.li>
           <motion.li
             initial="hidden"
-            whileInView="visible"
+            animate="visible"
             transition={{ delay: 1, duration: 0.5 }}
             viewport={{ once: true }}
             variants={{
@@ -257,7 +257,7 @@ const Home = () => {
 
       <motion.div
         initial="hidden"
-        whileInView="visible"
+        animate="visible"
         transition={{ delay: 1.25, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
@@ -274,7 +274,7 @@ const Home = () => {
       ></motion.div>
       <motion.div
         initial="hidden"
-        whileInView="visible"
+        animate="visible"
         transition={{ delay: 1.25, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
@@ -289,7 +289,7 @@ const Home = () => {
 
       <motion.div
         initial="hidden"
-        whileInView="visible"
+        animate="visible"
         transition={{ delay: 1.75, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
@@ -302,7 +302,7 @@ const Home = () => {
         }}
         className="absolute bottom-[12.5%] right-0 flex flex-col items-center"
       >
-        <p className="flex h-1/6 origin-center -rotate-90 text-sm font-semibold uppercase text-gray xl:hidden">
+        <p className="flex h-1/6 origin-center -rotate-90 text-sm font-semibold uppercase tracking-widest text-gray xl:hidden">
           Scroll
         </p>
 

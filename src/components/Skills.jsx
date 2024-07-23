@@ -21,23 +21,13 @@ const Skills = () => {
       className="flex min-h-screen w-full items-center justify-center bg-primary pb-24 xs:pb-36 md:pb-0"
     >
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-white">
-        <motion.h2
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-          variants={{
-            hidden: { opacity: 0, y: -50 },
-            visible: { opacity: 100, y: 0 },
-          }}
-          className="text-center text-4xl font-bold"
-        >
+        <h2 className="text-center text-4xl font-bold">
           My Technology <span className="text-secondary">Stack</span>
-        </motion.h2>
+        </h2>
 
-        <motion.p
+        <p
           initial="hidden"
-          whileInView="visible"
+          animate="visible"
           transition={{ duration: 1 }}
           viewport={{ once: true }}
           variants={{
@@ -47,7 +37,7 @@ const Skills = () => {
           className="pb-12 pt-4 text-gray lg:text-lg"
         >
           Here are the technologies I've worked with.
-        </motion.p>
+        </p>
 
         <div className="grid w-full grid-cols-2 place-items-center gap-y-8 xs:grid-cols-3 md:grid-cols-4 lg:gap-y-10">
           <Language icon={HTML} name="HTML" />
@@ -55,11 +45,11 @@ const Skills = () => {
           <Language icon={JavaScript} name="JavaScript" />
           <Language icon={TypeScript} name="TypeScript" />
           <Language icon={React} name="React" />
-          <Language icon={Node} name="Node JS" />
-          <Language icon={MongoDB} name="MongoDB" />
           <Language icon={Firebase} name="Firebase" />
           <Language icon={Tailwind} name="Tailwind" />
           <Language icon={SASS} name="SASS" />
+          <Language icon={Node} name="Node JS" />
+          <Language icon={MongoDB} name="MongoDB" />
           <Language icon={SQL} name="SQL" />
           <Language icon={Python} name="Python" />
         </div>
