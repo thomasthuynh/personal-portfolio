@@ -27,13 +27,14 @@ const Nav = () => {
           <img src={Logo} alt="TH" />
         </div>
 
-        {/* AVAILABLE FOR NEW PROJECTS */}
-        {/* <div className="mx-4">
-          <p className="flex items-center text-sm font-semibold uppercase tracking-widest text-white">
-            <span className="mr-3 flex h-1.5 w-1.5 rounded-full bg-secondary shadow-spread-secondary"></span>
-            Open for Work Aug 2024
+        {/* OPEN FOR WORK */}
+        <div className="w-30 hidden items-center text-xs md:flex lg:text-sm">
+          <span className="mr-3 flex h-1.5 w-1.5 rounded-full bg-secondary shadow-spread-secondary"></span>
+          <p className="items-left flex flex-col font-semibold uppercase tracking-wider text-white xs:flex-row md:flex-col lg:flex-row">
+            Open for Work&nbsp;
+            <span className="text-secondary">Aug 2024</span>
           </p>
-        </div> */}
+        </div>
 
         {/* MENU */}
         <div className="hidden md:flex">
@@ -196,7 +197,15 @@ const Nav = () => {
           onClick={() => setHamburgerToggled(!hamburgerToggled)}
           className="z-10 cursor-pointer md:hidden"
         >
-          {hamburgerToggled ? <FaXmark size={30} /> : <FaBars size={30} />}
+          {hamburgerToggled ? (
+            <div className="flex w-full justify-between">
+              {/* CLOSE */}
+              <FaXmark size={30} />
+            </div>
+          ) : (
+            // OPEN
+            <FaBars size={30} />
+          )}
         </div>
       </div>
 
@@ -206,7 +215,16 @@ const Nav = () => {
           hamburgerToggled ? "right-0 opacity-100" : "-right-full opacity-0"
         } absolute top-0 h-screen w-full bg-primary duration-300`}
       >
-        <div className="flex h-full w-full items-center justify-center">
+        <div className="flex h-full w-full flex-col items-center justify-center">
+          {/* OPEN FOR WORK */}
+          <div className="absolute left-0 top-0 flex items-center p-8 text-xs xs:text-sm">
+            <span className="mr-3 flex h-1.5 w-1.5 rounded-full bg-secondary shadow-spread-secondary"></span>
+            <p className="items-left flex font-semibold uppercase tracking-wider text-white">
+              Open for Work&nbsp;
+              <span className="text-secondary">Aug 2024</span>
+            </p>
+          </div>
+          {/* MOBILE LINKS */}
           <ul className="flex h-1/2 w-3/4 -translate-y-1/4 flex-col justify-center gap-4 text-left text-2xl font-semibold uppercase tracking-wider">
             <li>
               <Link
