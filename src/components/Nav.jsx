@@ -13,13 +13,13 @@ const Nav = () => {
     <motion.nav
       initial="hidden"
       animate="visible"
-      transition={{ delay: 1.75, duration: 0.5 }}
+      transition={{ delay: 1.25, duration: 0.5 }}
       viewport={{ once: true }}
       variants={{
         hidden: { opacity: 0, y: -20 },
         visible: { opacity: 100, y: 0 },
       }}
-      className="fixed left-0 top-0 z-20 mx-auto w-full bg-primary text-white h-[83px]"
+      className="fixed left-0 top-0 z-20 mx-auto h-[83px] w-full bg-primary text-white"
     >
       <div className="mx-auto flex w-[90%] max-w-[2560px] items-center justify-between py-4">
         {/* LOGO */}
@@ -27,9 +27,17 @@ const Nav = () => {
           <img src={Logo} alt="TH" />
         </div>
 
+        {/* AVAILABLE FOR NEW PROJECTS */}
+        {/* <div className="mx-4">
+          <p className="flex items-center text-sm font-semibold uppercase tracking-widest text-white">
+            <span className="mr-3 flex h-1.5 w-1.5 rounded-full bg-secondary shadow-spread-secondary"></span>
+            Open for Work Aug 2024
+          </p>
+        </div> */}
+
         {/* MENU */}
         <div className="hidden md:flex">
-          <ul className="flex items-center gap-12 font-semibold uppercase tracking-wider">
+          <ul className="flex items-center gap-10 text-sm font-semibold uppercase tracking-wider">
             {/* HOME LINK */}
             <li>
               <Link to="home" smooth={true} duration={500}>
@@ -199,7 +207,7 @@ const Nav = () => {
         } absolute top-0 h-screen w-full bg-primary duration-300`}
       >
         <div className="flex h-full w-full items-center justify-center">
-          <ul className="flex h-1/2 w-3/4 flex-col justify-center gap-4 text-2xl font-semibold uppercase tracking-wider text-left -translate-y-1/4">
+          <ul className="flex h-1/2 w-3/4 -translate-y-1/4 flex-col justify-center gap-4 text-left text-2xl font-semibold uppercase tracking-wider">
             <li>
               <Link
                 to="home"

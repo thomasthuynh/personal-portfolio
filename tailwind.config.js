@@ -6,10 +6,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#0a192f",
+        primary: "#0A192F",
         secondary: "#38BDF8",
-        white: "#ccd6f6",
-        gray: "#8892b0",
+        white: "#CCD6F6",
+        gray: "#8892B0",
       },
       keyframes: {
         wave: {

@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <header name="home" className="relative h-screen w-full bg-primary">
-      <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col justify-center">
+      <div className="mx-auto flex h-full w-[90%] flex-col justify-center xl:max-w-5xl">
         <motion.div className="relative overflow-hidden font-medium text-white lg:text-xl">
           <motion.p
             initial="initial"
@@ -58,13 +58,13 @@ const Home = () => {
 
         <div className="flex flex-col xs:flex-row">
           <div className="relative -mb-4 overflow-hidden py-2 text-4xl font-medium xs:mb-0 sm:text-5xl lg:text-6xl xl:text-7xl">
-            <Title color={"text-white"} delay={0.65}>
-              A Full Stack&nbsp;
+            <Title color={"text-white"} delay={0.675}>
+              A Web&nbsp;
             </Title>
           </div>
 
           <div className="relative overflow-hidden py-2 text-4xl font-medium sm:text-5xl lg:text-6xl xl:text-7xl">
-            <Title color={"text-white"} delay={0.95}>
+            <Title color={"text-white"} delay={0.825}>
               Developer.
             </Title>
           </div>
@@ -74,13 +74,12 @@ const Home = () => {
           <motion.p
             initial="initial"
             animate="animate"
-            transition={{ delay: 1.25, duration: 0.5 }}
+            transition={{ delay: 1, duration: 0.5 }}
             variants={{ initial: { y: "100%" }, animate: { y: 0 } }}
             className="w-full py-4 text-gray md:w-4/5 lg:text-lg"
           >
-            I specialize in developing (and occasionally designing) responsive
-            web applications. I build and enhance a wide range of projects,
-            utilizing a variety of both front-end and back-end technologies.
+            I specialize in developing and designing responsive
+            web applications utilizing a variety of front-end and back-end technologies.
           </motion.p>
         </motion.div>
 
@@ -88,7 +87,7 @@ const Home = () => {
         <motion.ul
           initial="hidden"
           animate="animate"
-          transition={{ delay: 1.75, duration: 0.5 }}
+          transition={{ delay: 1.25, duration: 0.5 }}
           viewport={{ once: true }}
           variants={{
             hidden: { opacity: 0, y: 20 },
@@ -123,7 +122,7 @@ const Home = () => {
               <HiOutlineMail size={20} />
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="/thomas-huynh-resume.pdf"
               target="_blank"
@@ -131,7 +130,7 @@ const Home = () => {
             >
               <BsFillPersonLinesFill size={20} />
             </a>
-          </li>
+          </li> */}
         </motion.ul>
 
         <motion.div
@@ -231,7 +230,7 @@ const Home = () => {
               </span>
             </a>
           </motion.li>
-          <motion.li
+          {/* <motion.li
             initial="hidden"
             animate="visible"
             transition={{ delay: 1, duration: 0.5 }}
@@ -251,14 +250,14 @@ const Home = () => {
                 <BsFillPersonLinesFill size={25} />
               </span>
             </a>
-          </motion.li>
+          </motion.li> */}
         </ul>
       </div>
 
       <motion.div
         initial="hidden"
         animate="visible"
-        transition={{ delay: 1.25, duration: 0.5 }}
+        transition={{ delay: 1, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
           hidden: {
@@ -275,7 +274,7 @@ const Home = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        transition={{ delay: 1.25, duration: 0.5 }}
+        transition={{ delay: 1, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
           hidden: { opacity: 0, y: -20 },
@@ -290,7 +289,7 @@ const Home = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        transition={{ delay: 1.75, duration: 0.5 }}
+        transition={{ delay: 1.5, duration: 0.5 }}
         viewport={{ once: true }}
         variants={{
           hidden: {

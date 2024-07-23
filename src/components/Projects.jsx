@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <section name="projects" className="w-full bg-primary">
       <div className="mx-auto flex h-full w-[90%] max-w-[1280px] flex-col items-center justify-center text-white">
-        <h2 className="text-center text-4xl font-bold">
+        <h2 className="text-center text-4xl font-semibold">
           Recent <span className="text-secondary">Projects</span>
         </h2>
 

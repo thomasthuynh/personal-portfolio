@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <section name="contact" className="bg-primary h-screen w-full">
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-white">
-        <h2 className="text-4xl font-bold">
+        <h2 className="text-4xl font-semibold">
           Get In <span className="text-secondary">Touch</span>
         </h2>
 

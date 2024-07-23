@@ -5,7 +5,7 @@ const About = () => {
     <section name="about" className="h-screen w-full bg-primary">
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-white">
         <h2
-          className="pb-12 text-center text-4xl font-bold"
+          className="pb-12 text-center text-4xl font-semibold"
         >
           About <span className="text-secondary">Me</span>
         </h2>
@@ -13,7 +13,7 @@ const About = () => {
         <div className="grid items-center gap-6 md:grid-cols-2 md:gap-8">
           <div>
             <p
-              className="text-3xl font-bold md:text-right md:text-4xl"
+              className="text-3xl font-semibold md:text-right md:text-4xl"
             >
               Hey, thanks for dropping by! Please feel free to look around.
               Here's a bit more about me.

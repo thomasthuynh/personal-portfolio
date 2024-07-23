@@ -21,7 +21,7 @@ const Skills = () => {
       className="flex min-h-screen w-full items-center justify-center bg-primary pb-24 xs:pb-36 md:pb-0"
     >
       <div className="mx-auto flex h-full w-[90%] max-w-[1024px] flex-col items-center justify-center text-white">
-        <h2 className="text-center text-4xl font-bold">
+        <h2 className="text-center text-4xl font-semibold">
           My Technology <span className="text-secondary">Stack</span>
         </h2>
 
@@ -36,7 +36,7 @@ const Skills = () => {
           }}
           className="pb-12 pt-4 text-gray lg:text-lg"
         >
-          Here are the technologies I've worked with.
+          Here are the technologies I work with.
         </p>
 
         <div className="grid w-full grid-cols-2 place-items-center gap-y-8 xs:grid-cols-3 md:grid-cols-4 lg:gap-y-10">
