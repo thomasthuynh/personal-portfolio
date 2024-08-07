@@ -3,6 +3,7 @@ import Project from "./Project";
 import Audiophile from "../assets/projects/Audiophile.png";
 import NetflixClone from "../assets/projects/NetflixClone.png";
 import Photosnap from "../assets/projects/Photosnap.png";
+import Sunnyside from "../assets/projects/Sunnyside.png";
 
 import HTML from "../assets/languages/html5-original.svg";
 import CSS from "../assets/languages/css3-original.svg";
@@ -90,6 +91,25 @@ const Projects = () => {
             description="A UI for a photography website where users can upload photos paired with stories, offering a professional platform with various membership tiers."
             github="https://github.com/thomasthuynh/photosnap"
             live="https://photosnap-designs.vercel.app/"
+          />
+          <Project
+            no="04"
+            name="Sunnyside"
+            image={Sunnyside}
+            languages={[
+              { name: "HTML", icon: HTML },
+              {
+                name: "CSS",
+                icon: CSS,
+              },
+              {
+                name: "JavaScript",
+                icon: JavaScript,
+              },
+            ]}
+            description="A website for a design agency, showcasing various projects and services, offering a professional platform to attract potential clients."
+            github="https://github.com/thomasthuynh/sunnyside"
+            live="https://sunnysidedesigns.netlify.app/"
           />
         </div>
       </div>

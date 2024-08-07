@@ -15,6 +15,7 @@ import SQL from "../assets/languages/sqldeveloper-original.svg";
 import Python from "../assets/languages/python-original.svg";
 import Figma from "../assets/languages/figma-original.svg";
 import FramerMotion from "../assets/languages/framermotion-original.svg";
+import Photoshop from "../assets/languages/photoshop-original.svg";
 
 const Skills = () => {
   return (
@@ -48,10 +49,12 @@ const Skills = () => {
           <Language icon={TypeScript} name="TypeScript" />
           <Language icon={React} name="React" />
           <Language icon={Firebase} name="Firebase" />
+          <Language icon={Node} name="Node" />
           <Language icon={Tailwind} name="Tailwind" />
           <Language icon={SASS} name="SASS" />
-          {/* <Language icon={Figma} name="Figma" />
-          <Language icon={FramerMotion} name="Framer Motion" /> */}
+          <Language icon={Photoshop} name="Photoshop" />
+          <Language icon={Figma} name="Figma" />
+          <Language icon={FramerMotion} name="Framer Motion" />
         </div>
       </div>
     </section>

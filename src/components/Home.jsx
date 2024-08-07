@@ -78,8 +78,8 @@ const Home = () => {
             variants={{ initial: { y: "100%" }, animate: { y: 0 } }}
             className="w-full py-4 text-gray md:w-4/5 lg:text-lg"
           >
-            I specialize in developing and designing responsive
-            web applications utilizing a variety of front-end and back-end technologies.
+            I'm a Toronto based developer specializing in building responsive
+            web applications utilizing a variety of front and back end technologies.
           </motion.p>
         </motion.div>
 

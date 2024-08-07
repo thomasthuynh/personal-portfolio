@@ -13,7 +13,7 @@ const Contact = () => {
 
         <p className="text-gray pb-12 pt-4 lg:text-lg">
           Want to ask a question, share feedback, or collaborate on a project?
-          Shoot me a message!
+          Send me a message!
         </p>
 
         <div className="w-[90%] max-w-[640px]">

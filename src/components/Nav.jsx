@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
@@ -8,6 +8,19 @@ import { FaXmark } from "react-icons/fa6";
 
 const Nav = () => {
   const [hamburgerToggled, setHamburgerToggled] = useState(false);
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const timerId = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timerId);
+  }, []);
+
+  const formatTime = (date) => {
+    return date.toLocaleTimeString();
+  };
 
   return (
     <motion.nav
@@ -31,8 +44,8 @@ const Nav = () => {
         <div className="w-30 hidden items-center text-xs md:flex lg:text-sm">
           <span className="mr-3 flex h-1.5 w-1.5 rounded-full bg-secondary shadow-spread-secondary"></span>
           <p className="items-left flex flex-col font-semibold uppercase tracking-wider text-white xs:flex-row md:flex-col lg:flex-row">
-            Open for Work&nbsp;
-            <span className="text-secondary">Aug 2024</span>
+            Toronto Local&nbsp;
+            <span className="text-secondary">{formatTime(time)}</span>
           </p>
         </div>
 
