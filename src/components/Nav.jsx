@@ -44,7 +44,7 @@ const Nav = () => {
         <div className="w-30 hidden items-center text-xs md:flex lg:text-sm">
           <span className="mr-3 flex h-1.5 w-1.5 rounded-full bg-secondary shadow-spread-secondary"></span>
           <p className="items-left flex flex-col font-semibold uppercase tracking-wider text-white xs:flex-row md:flex-col lg:flex-row">
-            Toronto Local&nbsp;
+            Local Time&nbsp;
             <span className="text-secondary">{formatTime(time)}</span>
           </p>
         </div>
@@ -233,8 +233,8 @@ const Nav = () => {
           <div className="absolute left-0 top-0 flex items-center p-8 text-xs xs:text-sm">
             <span className="mr-3 flex h-1.5 w-1.5 rounded-full bg-secondary shadow-spread-secondary"></span>
             <p className="items-left flex font-semibold uppercase tracking-wider text-white">
-              Open for Work&nbsp;
-              <span className="text-secondary">Aug 2024</span>
+              Local Time&nbsp;
+              <span className="text-secondary">{formatTime(time)}</span>
             </p>
           </div>
           {/* MOBILE LINKS */}
