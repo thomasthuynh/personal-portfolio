@@ -107,7 +107,7 @@ const Projects = () => {
                 icon: JavaScript,
               },
             ]}
-            description="A website for a design agency, showcasing various projects and services, offering a professional platform to attract potential clients."
+            description="A landing page for a design agency, showcasing various projects and services, offering a professional platform to attract potential clients."
             github="https://github.com/thomasthuynh/sunnyside"
             live="https://sunnysidedesigns.netlify.app/"
           />

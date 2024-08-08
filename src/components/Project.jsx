@@ -19,7 +19,7 @@ const Project = ({ name, image, languages, description, github, live, no }) => {
       </div>
 
       {/* PROJECT IMAGE */}
-      <div className="mt-8">
+      <div className="mt-8 hover:opacity-90 transition">
         <a href={live} target="_blank">
           <img src={image} alt={name} />
         </a>
